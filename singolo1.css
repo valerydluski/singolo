@@ -1,51 +1,66 @@
 body{ 
     font-family: "Lato", "Arial", sans-serif;
+    font-size: 18px;
     padding: 0px;
     margin: 0px;
     min-width: 1020px;
+}
+
+.logoSingolo{
+    position: absolute;
+    top: -11px;
+    left:40px;
+    font-family: "lato";
+    color:#ffffff;
+    font-size: 24px;
+    letter-spacing: 0px;
+    font-weight: 700;
 }
 
 p{
     display: inline-block;
 }
 
+.navPanel{
+    margin-left: auto;
+}
+
 ul.nav{
-    font-size: 12px;
+    display: inline-flex;
     position: absolute;
-    top: 30px;
-    left:579px;
-    margin-left: 0px;
-    padding-left: 0px;
-    color:#ffffff; 
+    top: 29px;
+    left: 578px;
+    margin: 0px;
+    margin-top: 13px;
+    padding: 0px;  
+    list-style: none; 
 }
 
 .nav li { 
-    display: inline; 
-    margin-left: 30px;
+    position: relative;
+    padding-left: 30px;
 }
 
-.nav li:nth-child(1){
+.navLinkHome{
     color: #f06c64;
-}
-.nav li:nth-child(1):before{
-    display:none
-}
-
-/*li::before{
-    position: absolute;
-    bottom: 3px;
-    left: 80px;
-    color:white;
-    content: '.';
-}*/
-
-ul.nav li {
-    display: inline-block;
+    font-size: 12px;
+    font-weight: 700px;
+    display: block;
+    letter-spacing: -0.2px;
     text-decoration: none;
-    text-align: center;
 }
 
-ul.nav li:hover{
+.navLink{
+    display: block;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 700px;
+    display: block;
+    letter-spacing: -0.2px;
+    text-decoration: none;
+}
+
+a:hover{
     color: #4adf05;
 }
 
@@ -56,14 +71,14 @@ ul.nav li:hover{
 
 .headerSingolo{
     background-color:#2d303a ;
-    height: 90px;
+    height: 89px;
 }
 
-.logoSingolo{
+.headerBottom{
     position: absolute;
-    top: -10px;
-    left:40px;
-    font-family: "lato";
-    color:#ffffff;
-    font-size: 18pt;
+    top: 89px;
+    height: 6px;
+    width: 100%;
+    background-color: #323746;
 }
+
