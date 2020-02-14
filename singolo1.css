@@ -82,3 +82,34 @@ a:hover{
     background-color: #323746;
 }
 
+.mainContent{
+    position: absolute;
+    top: 95px;
+    height: 594px;
+    width: 100%;
+    background-color: #f06c64;
+}
+
+.mainContentBottom{
+    position: absolute;
+    top: 594px;
+    height: 6px;
+    width: 100%;
+    background-color: #ea676b;
+}
+
+footer{
+    position: absolute;
+    top: 695px;
+    height: 495px;
+    width: 100%;
+    background-color: #f2f2f2;  
+}
+
+.footerBottom{
+    position: absolute;
+    top: 495px;
+    height: 6px;
+    width: 100%;
+    background-color: #ffffff;
+}
