@@ -103,7 +103,8 @@ footer{
     top: 695px;
     height: 495px;
     width: 100%;
-    background-color: #f2f2f2;  
+    background-color: #f2f2f2;
+    color: #a8acc0;  
 }
 
 .footerBottom{
@@ -113,3 +114,17 @@ footer{
     width: 100%;
     background-color: #ffffff;
 }
+
+.services {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    }
+
+.services p {
+  display: inline-block;
+  vertical-align: top;
+  width: 10%;
+  margin: 0 5px;
+  background-position: center top;
+}    
