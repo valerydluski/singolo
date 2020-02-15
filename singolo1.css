@@ -5,10 +5,6 @@
     box-sizing: border-box;
 }
 
-.section{
-    max-width: 1020px;
-}
-
 .allHeader{
     height: 95px;
     background-color: #2d303a;
@@ -16,6 +12,7 @@
 }
 
 .headerSingolo{
+    max-width: 1020px;
     margin: 0 auto;
     height: inherit;
     min-width: 880px;
@@ -96,6 +93,10 @@ a:hover{
     height: 600px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
+}
+
+.sliderBlock{
+    max-width: 1020px; 
 }
 
 footer{
