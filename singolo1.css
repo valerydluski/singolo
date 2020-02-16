@@ -147,3 +147,39 @@ footer{
     margin-top: 5px;
     box-shadow: 0 0 0 2px rgb(102, 109, 137);
 }
+
+svg {
+    fill: rgb(102, 109, 137);
+  }
+
+.gridBlock{
+    display: flex;
+}
+
+.innerBlock{
+    padding-left: 22px;
+    max-width: 242px; 
+}
+
+.innerBlock p{
+    line-height: 1.37rem;
+    text-align: justify;
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: 0.012rem;
+    max-width: 174px;
+    max-height: 62px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.innerBlock h2{
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-bottom: 8px;
+    letter-spacing: 0.005rem;
+    transition: color .3s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
