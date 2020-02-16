@@ -96,7 +96,29 @@ a:hover{
 }
 
 .sliderBlock{
-    max-width: 1020px; 
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px 12px 42px;
+    margin: 0 auto; 
+    max-width: 1020px;
+}
+
+.verticalPhone{
+    margin-left: -1px;
+}
+
+.horizontalPhone{
+    margin-left: 18px;  
+}
+
+.left{
+    cursor: pointer;
+}
+
+.right{
+    cursor: pointer;
 }
 
 footer{
