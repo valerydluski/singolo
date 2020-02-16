@@ -101,16 +101,17 @@ a:hover{
 
 footer{
     min-height: 500px;
-    background-color: #f2f2f2;
-    color: #a8acc0; 
+    background-color: #f2f2f2; 
     border-bottom: 6px solid #ffffff; 
     padding: 0 30px;
+    
 }
 
 .services {
     margin: 0 auto;
     max-width: 960px;
     padding: 59px 10px 0px 10px;
+    color: rgb(102, 109, 137);
     }
 
 .services h1{
@@ -182,4 +183,28 @@ svg {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.footerServices .gridBlock:nth-child(2) .allPicture{
+    padding-left: 17px;
+    padding-top: 11px;    
+}
+
+.footerServices .gridBlock:nth-child(3) .allPicture{
+    padding-top: 14px;    
+}
+
+.footerServices .gridBlock:nth-child(4) .allPicture{
+    padding-left: 17px;  
+}
+.footerServices .gridBlock:nth-child(5) .allPicture{
+    padding-top: 14px;    
+}
+
+.footerServices .gridBlock:nth-child(6) h2 {
+    padding-left: 2px;
+}
+
+.footerServices .gridBlock:nth-child(3) h2 {
+    padding-left: 2px;
 }
