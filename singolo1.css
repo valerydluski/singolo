@@ -185,12 +185,12 @@ svg {
 }
 
 .innerBlock p{
+    color: #767e9e;
     line-height: 1.37rem;
     text-align: justify;
     font-size: .7rem;
     font-weight: 700;
     letter-spacing: 0.012rem;
-    max-width: 174px;
     max-height: 62px;
     overflow: hidden;
     text-overflow: ellipsis;
