@@ -1,3 +1,33 @@
+@font-face { 
+    font-family: 'LatoBlack'; 
+    src: url('./fonts/lato/Lato-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face { 
+    font-family: 'LatoBold'; 
+    src: url('./fonts/lato/Lato-Bold.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal;
+  }
+  @font-face { 
+    font-family: 'LatoLight'; 
+    src: url('./lato/Lato-Light.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal;
+  }
+  @font-face { 
+    font-family: 'LatoRegular'; 
+    src: url('./fonts/lato/Lato-Regular.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal;
+  }
+  @font-face { 
+    font-family: 'LatoThin'; 
+    src: url('./fonts/lato/Lato-Thin.ttf') format('truetype');
+    font-weight: normal; 
+    font-style: normal;
+  }
 *{ 
     font-family: "Lato", sans-serif;
     padding: 0px;
@@ -30,9 +60,9 @@
 
 .headerSingolo .logoSingolo{
     font-weight: bold;
-    font-size: 24px;
+    font-size: 26px;
     margin-left: 40px;
-    letter-spacing: -0.02rem;
+    letter-spacing: -1.1px;
     padding-bottom: 1px;
 }
 
@@ -62,7 +92,7 @@
     font-size: 12px;
     font-weight: 700px;
     display: block;
-    letter-spacing: -0.2px;
+    letter-spacing: 0px;
     text-decoration: none;
 }
 
