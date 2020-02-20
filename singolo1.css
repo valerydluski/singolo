@@ -35,13 +35,13 @@
     box-sizing: border-box;
 }
 
-.allHeader{
+.wrapper__header{
     height: 95px;
     background-color: #2d303a;
     border-bottom: 6px solid #323746;
 }
 
-.headerSingolo{
+header{
     max-width: 1020px;
     margin: 0 auto;
     height: inherit;
@@ -50,16 +50,10 @@
     color: white;
     display: flex;
     justify-content: space-between;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -o-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
     padding-bottom: 6px;;
 }
 
-.headerSingolo .logoSingolo{
-    font-weight: bold;
+h1{   
     font-size: 26px;
     margin-left: 40px;
     letter-spacing: -1.1px;
@@ -71,23 +65,23 @@
     color: #f06c64;
 }
 
-.nav{
+ul{
     display: flex;
     list-style: none;
     font-size: .78rem;
     margin-right: 40px;
 }
 
-.nav li { 
+ul li { 
     margin-left: 30px;
     padding-top: 9px;
-    letter-spacing: -0.029rem;
+    letter-spacing: 0px;
     position: relative;
     cursor: pointer;
     transition: color .3s;
 }
 
-.navLinkHome{
+.nav__link__home{
     color: #f06c64;
     font-size: 12px;
     font-weight: 700px;
@@ -96,7 +90,7 @@
     text-decoration: none;
 }
 
-.navLink{
+.nav__link{
     display: block;
     color: #ffffff;
     font-size: 12px;
@@ -110,22 +104,22 @@ a:hover{
     color: #4adf05;
 }
 
-.nav li:not(:first-child)::before{
+.header__nav li:not(:first-child)::before{
     content: ".";
     position: absolute;
     left: -16px;
     top: 6px;
     font-size: bold;
-    color: rgb(73,78,98);
+    color: #494e62;
   }
 
-.mainContent{
+.wrapper__slider{
     height: 600px;
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
 }
 
-.sliderBlock{
+.slider{
     height: inherit;
     display: flex;
     align-items: center;
@@ -151,7 +145,7 @@ a:hover{
     cursor: pointer;
 }
 
-.myServices{
+.wrapper__services{
     min-height: 500px;
     background-color: #f2f2f2; 
     border-bottom: 6px solid #ffffff; 
@@ -166,7 +160,7 @@ a:hover{
     color: rgb(102, 109, 137);
     }
 
-.services h1{
+.services h2{
     font-size: 1.9rem;
     font-weight: 900;
     letter-spacing: -0.025rem;   
@@ -226,7 +220,7 @@ svg {
     text-overflow: ellipsis;
 }
 
-.innerBlock h2{
+.innerBlock h3{
     font-size: 1.1rem;
     font-weight: 900;
     margin-bottom: 8px;
@@ -253,10 +247,10 @@ svg {
     padding-top: 14px;    
 }
 
-.footerServices .gridBlock:nth-child(6) h2 {
+.footerServices .gridBlock:nth-child(6) h3 {
     padding-left: 2px;
 }
 
-.footerServices .gridBlock:nth-child(3) h2 {
+.footerServices .gridBlock:nth-child(3) h3 {
     padding-left: 2px;
 }
