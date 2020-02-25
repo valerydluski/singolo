@@ -66,18 +66,37 @@
     letter-spacing: -0.4px;
 }
 
+.ul__portfolio__container{
+  margin-left: 20px;
+}
+
 .ul__portfolio__container ul{
     display: flex;
     list-style: none;
 }
 
+.ul__portfolio__container ul li{
+
+}
+
 .ul__portfolio__container ul li a{
     color: #767e9e;
     text-decoration: none;
+    border: 3px solid #767e9e; /* Белая рамка */
+    border-radius: 10px; /* Радиус скругления */
+    display: inline-block;
 }
 
 .ul__portfolio__container ul li a:hover{
     color: #4adf05;
+}
+
+.grid__portfolio{
+  display: grid;
+  grid-template-rows: 123px 123px 123px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0px 19px;
+  margin-top: 43px;
 }
 
 .adoutUs{
