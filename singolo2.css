@@ -119,3 +119,24 @@
     height: 734px;
     border-bottom: 6px solid #ffffff;
 }
+
+.h2__aboutUs{
+  font-family: 'LatoBlack', sans-serif;
+  color: #666d89;
+  font-size: 30px;
+  padding-left: 40px;
+  padding-top: 60px;
+  letter-spacing: normal; 
+}
+
+.p__aboutUs__container{
+  padding-left: 40px;
+  padding-top: 20px;
+}
+
+.p__aboutUs{
+  color: #767e9e;
+  font-size: 18px;
+  line-height: 30px;
+}
+
