@@ -67,7 +67,8 @@
 }
 
 .ul__portfolio__container{
-  margin-left: 20px;
+  margin-left: 10px;
+  margin-top: 4px;
 }
 
 .ul__portfolio__container ul{
@@ -76,27 +77,41 @@
 }
 
 .ul__portfolio__container ul li{
-
+  list-style: none;
+  display: inline-block;
+  width: auto;
 }
 
-.ul__portfolio__container ul li a{
+.ul__portfolio__container ul li button{
     color: #767e9e;
     text-decoration: none;
-    border: 3px solid #767e9e; /* Белая рамка */
-    border-radius: 10px; /* Радиус скругления */
-    display: inline-block;
+    border: 1.0px solid #767e9e;
+    border-radius: 5px; 
+    display: block;
+    background-color: transparent;
+    height: 22px;
+    border-radius: 5px;
+    color: #767e9e;
+    font-family: 'LatoRegular', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.01px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    margin-right: 6px;
 }
 
-.ul__portfolio__container ul li a:hover{
+.ul__portfolio__container ul li button:hover{
     color: #4adf05;
 }
 
 .grid__portfolio{
   display: grid;
-  grid-template-rows: 123px 123px 123px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 0px 19px;
-  margin-top: 43px;
+  grid-template-rows: 187px 187px 187px;
+  grid-template-columns: 220px 220px 220px 220px;
+  grid-gap: 20px 20px;
+  margin-top: 20px;
+  margin-left: 40px;
 }
 
 .adoutUs{
