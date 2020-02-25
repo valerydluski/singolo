@@ -12,7 +12,7 @@
   }
   @font-face { 
     font-family: 'LatoLight'; 
-    src: url('./assets/lato/Lato-Light.ttf') format('truetype');
+    src: url('./assets/fonts/lato/Lato-Light.ttf') format('truetype');
     font-weight: normal; 
     font-style: normal;
   }
@@ -118,6 +118,10 @@
     margin-left: 40px;
 }
 
+:nth-child(n+13) {
+    display: none;
+}
+
 .adoutUs{
     background-color: #f2f2f2;
     height: 734px;
@@ -135,12 +139,12 @@
 
 .p__aboutUs__container{
     padding-left: 40px;
-    padding-top: 21px;
+    padding-top: 18px;
 }
 
 .p__aboutUs{
     color: #767e9e;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
 }
 
