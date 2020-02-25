@@ -67,8 +67,8 @@
 }
 
 .ul__portfolio__container{
-  margin-left: 10px;
-  margin-top: 4px;
+    margin-left: 10px;
+    margin-top: 4px;
 }
 
 .ul__portfolio__container ul{
@@ -77,9 +77,9 @@
 }
 
 .ul__portfolio__container ul li{
-  list-style: none;
-  display: inline-block;
-  width: auto;
+   list-style: none;
+   display: inline-block;
+   width: auto;
 }
 
 .ul__portfolio__container ul li button{
@@ -106,12 +106,12 @@
 }
 
 .grid__portfolio{
-  display: grid;
-  grid-template-rows: 187px 187px 187px;
-  grid-template-columns: 220px 220px 220px 220px;
-  grid-gap: 20px 20px;
-  margin-top: 20px;
-  margin-left: 40px;
+    display: grid;
+    grid-template-rows: 187px 187px 187px;
+    grid-template-columns: 220px 220px 220px 220px;
+    grid-gap: 20px 20px;
+    margin-top: 20px;
+    margin-left: 40px;
 }
 
 .adoutUs{
@@ -121,22 +121,31 @@
 }
 
 .h2__aboutUs{
-  font-family: 'LatoBlack', sans-serif;
-  color: #666d89;
-  font-size: 30px;
-  padding-left: 40px;
-  padding-top: 60px;
-  letter-spacing: normal; 
+    font-family: 'LatoBlack', sans-serif;
+    color: #666d89;
+    font-size: 30px;
+    padding-left: 40px;
+    padding-top: 60px;
+    letter-spacing: normal; 
 }
 
 .p__aboutUs__container{
-  padding-left: 40px;
-  padding-top: 20px;
+    padding-left: 40px;
+    padding-top: 21px;
 }
 
 .p__aboutUs{
-  color: #767e9e;
-  font-size: 18px;
-  line-height: 30px;
+    color: #767e9e;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.grid__aboutUs{
+    display: grid;
+    grid-template-rows: 300px 70px 40px;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 20px 20px;
+    margin-top: 40px;
+    margin-left: 40px;  
 }
 
