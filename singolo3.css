@@ -57,3 +57,12 @@ footer{
     background-color: #2d303a;
     height: 76px;
 }
+
+.footer__social_ico{
+  max-width: 30px;
+  max-height: 30px;
+  box-shadow: 0 0 0 2px #9297aa;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px;
+}

@@ -12,11 +12,36 @@
        <div class="wrapper">
             <h2 class="h2__quote">Get a Quote</h2>
             <p class="p__quote">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-       </div>
+            <div class="contact__form">
+                <form method="POST">
+                    <input type="text" name="name" placeholder="Name (Required)" required>
+                    <input type="email" name="email" placeholder="Email (Required)" required>
+                    <input type="text" name="subject" placeholder="Subject">
+                    <textarea name="comment" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>
+                    <button type="submit" formmethod="POST">Submit</button>
+                </form>
+                <div class="contact__info">
+                    <h3>Contact Information</h3>
+                    <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
+                    <p class="contact__address">Elm St. 14/05 Lost City</p>
+                    <a class="contact__phone" href="tel:035283318635">03528 331 86 35</a>
+                    <a class="contact__email" href="mailto:info@singolo.com">info@singolo.com</a>
+                </div>    
+            </div>
+        </div>
    </div>
+ 
    <footer>
         <div class="wrapper">
-
+            <div class="footer__copy">
+                <object type="image/svg+xml" data="/assets/img/Copyright.svg" class="footer__copy_ico"></object>
+            </div>
+            <div class="footer__ico">
+                <object type="image/svg+xml" data="/assets/img/ico-facebook.svg" class="footer__social_ico"></object>
+                <object type="image/svg+xml" data="/assets/img/ico-google-plus.svg" class="footer__social_ico"></object>
+                <object type="image/svg+xml" data="/assets/img/ico-twitter.svg" class="footer__social_ico"></object>
+                <object type="image/svg+xml" data="/assets/img/ico-linkedin.svg" class="footer__social_ico"></object>
+            </div>
         </div>
    </footer> 
 </body>
