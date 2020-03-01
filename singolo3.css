@@ -53,6 +53,12 @@
     color: #f0d8d9;   
 }
 
+.contact-form {
+  margin-top: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
 footer{
     background-color: #2d303a;
     height: 76px;
