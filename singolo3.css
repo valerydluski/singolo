@@ -131,6 +131,64 @@ form{
     margin-left: 21px;
 }
 
+.contact__info h3{
+    font-family: 'LatoBlack',sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #f0d8d9;
+    letter-spacing: normal;
+}
+
+.contact__info p{
+    font-family: 'LatoRegular', sans-serif; 
+    margin-top: 6px;
+    text-align: justify;
+    letter-spacing: -0.01rem;;
+    font-size: 12px;
+    line-height: 22px;
+    color: #f0d8d9;
+}
+
+.contact__info a{
+    font-family: 'LatoRegular',sans-serif;
+    text-decoration: none;
+    outline: none;
+    font-size: 12px;
+    color: #f0d8d9;
+    font-weight: normal;
+    letter-spacing: normal;
+}
+
+.contact__info a:hover{
+    color: lawngreen;
+}
+
+.contact__address {
+    margin: 26px 3px 0;
+  }
+
+.contact__phone {
+    margin: 7px 2px 0; 
+}  
+
+.contact__email {
+    margin: 8px 1px; 
+}  
+
+.contact__address::before{
+    content: url(./assets/img/gps.svg);
+    margin-right: 13px;
+}
+
+.contact__phone::before{
+    content: url(./assets/img/tel.svg);
+    margin-right: 11px;
+}
+
+.contact__email::before{
+    content: url(./assets/img/mail.svg);
+    margin-right: 9px;
+}
 
 
 footer{
