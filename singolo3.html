@@ -3,8 +3,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Singolo3</title>
-    <link rel="stylesheet" href="singolo1.css">
-    <link rel="stylesheet" href="singolo2.css">
     <link rel="stylesheet" href="singolo3.css">
 </head>
 <body>
@@ -13,13 +11,15 @@
             <h2 class="h2__quote">Get a Quote</h2>
             <p class="p__quote">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
             <div class="contact__form">
-                <form method="POST">
-                    <input type="text" name="name" placeholder="Name (Required)" required>
-                    <input type="email" name="email" placeholder="Email (Required)" required>
-                    <input type="text" name="subject" placeholder="Subject">
-                    <textarea name="comment" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>
-                    <button type="submit" formmethod="POST">Submit</button>
-                </form>
+                <section class="form__container">
+                    <form method="POST">
+                        <input class="form__input" type="text" name="name" placeholder="Name (Required)" required>
+                        <input class="form__input" type="email" name="email" placeholder="Email (Required)" required>
+                        <input class="form__input" type="text" name="subject" placeholder="Subject">
+                        <textarea class="form__textarea"name="comment" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>
+                        <button class="form__button" type="submit" formmethod="POST">Submit</button>
+                    </form>
+                </section>    
                 <div class="contact__info">
                     <h3>Contact Information</h3>
                     <p>Quisque hendrerit purus dapibus, ornare nibh vitae, viver&shy;ra nibh. Fusce vitae aliquam tellus. Proin sit amet volutpat libero. Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. </p>
@@ -37,10 +37,18 @@
                 <object type="image/svg+xml" data="/assets/img/Copyright.svg" class="footer__copy_ico"></object>
             </div>
             <div class="footer__ico">
-                <object type="image/svg+xml" data="/assets/img/ico-facebook.svg" class="footer__social_ico"></object>
-                <object type="image/svg+xml" data="/assets/img/ico-google-plus.svg" class="footer__social_ico"></object>
-                <object type="image/svg+xml" data="/assets/img/ico-twitter.svg" class="footer__social_ico"></object>
-                <object type="image/svg+xml" data="/assets/img/ico-linkedin.svg" class="footer__social_ico"></object>
+                <a class="footer__social_ico" href="#">
+                    <object type="image/svg+xml" data="/assets/img/ico-facebook.svg" class="facebook"></object>
+                </a>
+                <a class="footer__social_ico" href="#">
+                    <object type="image/svg+xml" data="/assets/img/ico-google-plus.svg" class="google"></object>
+                </a>
+                <a class="footer__social_ico" href="#">
+                    <object type="image/svg+xml" data="/assets/img/ico-twitter.svg" class="twitter"></object>
+                </a>
+                <a class="footer__social_ico" href="#">
+                    <object type="image/svg+xml" data="/assets/img/ico-linkedin.svg" class="linkedin"></object>
+                </a>
             </div>
         </div>
    </footer> 
