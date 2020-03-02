@@ -64,11 +64,13 @@
 }
 
 .p__quote{
+    margin-top: -3px;
+    font-family: 'LatoLight', sans-serif;
     font-weight: 300;
     font-size: 18px;
-    line-height: 29px;
+    line-height: 30px;
     text-align: justify;
-    letter-spacing: -0.013rem;
+    letter-spacing: -0.01em;
     word-spacing: -0.01rem;
 }
 .contact__form {
@@ -123,6 +125,11 @@ form{
     border-radius: 16px;
 }
 
+.form__button:hover{
+    background-color: #d6564f;
+}
+
+
 .contact__info {
     display: flex;
     flex-direction: column;
@@ -143,7 +150,7 @@ form{
     font-family: 'LatoRegular', sans-serif; 
     margin-top: 6px;
     text-align: justify;
-    letter-spacing: -0.01rem;;
+    letter-spacing: -0.004em;
     font-size: 12px;
     line-height: 22px;
     color: #f0d8d9;
@@ -196,8 +203,20 @@ footer{
     height: 76px;
 }
 
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copy{
+    margin-top: 34px;
+}
+
 .footer__ico{
     display: flex;
+    margin-top: 25px;
+    margin-right: -10px;
 }
 
 .footer__social_ico{
