@@ -659,3 +659,11 @@ footer{
     width: 14px;
     height: 14px; 
 }
+
+.footer__social_ico:hover{
+    background-color: lawngreen;
+}
+
+.social_ico:hover{
+    background-color: lawngreen;
+}
