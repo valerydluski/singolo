@@ -29,7 +29,7 @@
     font-style: normal;
   }
 *{ 
-    font-family: "Lato", sans-serif;
+    
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -52,22 +52,25 @@ header{
     margin: 0;
 }
 
-h1{   
+h1{  
+    font-family: 'LatoBold';
     font-size: 26px;
     margin-left: 40px;
     letter-spacing: -1.1px;
-    margin-bottom: 1px;
+    margin-bottom: 0px;
 }
 
 .h1Star{
-    margin-left: -5px;
+    font-family: 'LatoBold';
+    margin-left: -4px;
+    margin-top: 0px;
     color: #f06c64;
 }
 
 ul{
+    font-family: 'LatoRegular';
     display: flex;
-    list-style: none;
-    font-size: .78rem;
+    list-style: none; 
     margin-right: 40px;
 }
 
@@ -107,7 +110,7 @@ a:hover{
     content: ".";
     position: absolute;
     left: -16px;
-    top: -2px;
+    top: -7px;
     font-size: bold;
     color: #494e62;
   }
@@ -153,6 +156,7 @@ a:hover{
 }
 
 .wrapper__services h2{
+    font-family: "latoBlack";
     color: #666d89;
     font-size: 30px;
     font-weight: 900;
@@ -162,26 +166,27 @@ a:hover{
 } 
 
 .ourServicesContainer{
+    font-family: "latoLight";
     padding-right: 40px;
     padding-left: 40px;
     color: #767e9e;
-    margin-top: 19px;
+    margin-top: 18px;
     text-align: justify;
-    line-height: 1.9rem;
-    font-size: 1.1rem;
+    line-height: 29px;
+    font-size: 18px;
     font-weight: 300;
-    letter-spacing: 0.01rem;
-    overflow: hidden;
+    letter-spacing: 0px;
+    text-overflow: ellipsis;
 }
 
 .footerServices{
     display: grid;
     grid-template-rows: 123px 123px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 0px 0px;
+    grid-template-columns: 300px 300px 300px;
+    grid-gap: 0px 20px;
     margin-top: 43px;
     margin-left: 40px;
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 .allPicture{
@@ -204,33 +209,37 @@ svg {
 }
 
 .innerBlock{
+    margin: 0;
+    padding: 0;
     padding-left: 22px;
     max-width: 242px; 
 }
 
 .innerBlock p{
+    font-family: "latoRegular";
     color: #767e9e;
-    line-height: 1.37rem;
+    line-height: 22px;
     text-align: justify;
-    font-size: .7rem;
+    font-size: 12px;
     font-weight: 700;
-    letter-spacing: 0.012rem;
+    letter-spacing: 0px;
     max-height: 62px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
 .innerBlock h3{
+    font-family: "latoBlack";
     color: #666d89;
-    font-size: 1.1rem;
+    font-size: 18px;
     font-weight: 900;
     margin-bottom: 8px;
-    letter-spacing: 0.005rem;
-    transition: color .3s;
+    letter-spacing: -0.012px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    
+    margin-left: -1px;
+    margin-top: 1px;
 }
 
 .footerServices .gridBlock:nth-child(2) .allPicture{
@@ -270,7 +279,7 @@ svg {
 }
 
 .h1__portfolio{
-    font-family: 'LatoBlack', sans-serif;
+    font-family: 'LatoBlack';
     font-size: 30px;
     color: #666d89;
     padding-top: 59px;
@@ -278,7 +287,7 @@ svg {
 }
 
 .portfolio__p{
-    font-family: 'LatoLight', sans-serif;
+    font-family: 'LatoLight';
     font-size: 18px;
     color: #767e9e;
     padding-top: 21px;
@@ -289,7 +298,7 @@ svg {
 
 .ul__portfolio__container{
     margin-left: 11px;
-    margin-top: 6px;
+    margin-top: 7px;
     
 }
 
@@ -352,7 +361,7 @@ svg {
 }
 
 .h2__aboutUs{
-    font-family: 'LatoBlack', sans-serif;
+    font-family: 'LatoBlack';
     color: #666d89;
     font-size: 30px;
     padding-left: 40px;
@@ -365,11 +374,13 @@ svg {
 }
 
 .p__aboutUs{
+    font-family: "latoLight";
     color: #767e9e;
     font-size: 18px;
     line-height: 30px;
-    letter-spacing: -0.012em;
+    letter-spacing: 0px;
     text-align: justify;
+    text-overflow: ellipsis;
 }
 
 .grid__aboutUs{
@@ -383,25 +394,26 @@ svg {
 }
 
 .grid__aboutUs .grid__aboutUs__text__container h3{
-    font-family: 'LatoBlack', sans-serif;
+    font-family: 'LatoBlack';
     font-size: 18px;
     color: #666d89;
     margin: 12px 0 0;
     font-weight: 900;
-    letter-spacing: -0.01rem;
+    letter-spacing: 0px;
     overflow: hidden;
+    text-overflow: ellipsis;
 }  
 
 .grid__aboutUs__text__container p{
     color: #767e9e;
-    font-family: 'LatoRegular', sans-serif;
+    font-family: 'LatoRegular';
     margin: 8px 0 23px;
     font-weight: normal;
     font-size: 12px;
     line-height: 21px;
     text-align: justify;
     overflow: hidden;
-    
+    text-overflow: ellipsis;
 }
 
 .grid__aboutUs__text__container .adam_p {
@@ -453,24 +465,26 @@ letter-spacing: -0.01rem;
 }
 
 .h2__quote{
-    font-family: 'LatoBlack',sans-serif;
+    font-family: 'LatoBlack';
     padding: 59px 20px 18px;
     font-weight: 900;
     font-size: 30px;
-    letter-spacing: -0.013rem;
+    letter-spacing: -0.12px;
 }
 
 .p__quote{
     padding-left: 20px;
     margin-right: 60px;
     margin-top: 0px;
-    font-family: 'LatoLight', sans-serif;
+    font-family: 'LatoLight';
     font-weight: 300;
     font-size: 18px;
     line-height: 30px;
     text-align: justify;
     letter-spacing: normal;
     word-spacing: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .contact__form {
     display: flex;
@@ -493,6 +507,7 @@ form{
 }
 
 .form__input{
+    font-family: "latoRegular";
     color: black;
     height: 38px;
     margin-bottom: 16px;
@@ -506,6 +521,7 @@ form{
 ::-webkit-input-placeholder {color: #f48c8f;}
 
 .form__textarea{
+    font-family: "latoRegular";
     color: greenyellow;
     background-color: #d6564f;
     height: 202px;
@@ -541,21 +557,22 @@ form{
 }
 
 .contact__info h3{
-    font-family: 'LatoBlack',sans-serif;
+    font-family: 'LatoBlack';
     font-weight: 900;
     font-size: 18px;
     color: #f0d8d9;
-    letter-spacing: -0.01rem;
-    word-spacing: 0.015rem;
+    letter-spacing: -0.01px;
+    word-spacing: 0.12px;
 }
 
 .contact__info p{
-    font-family: 'LatoRegular', sans-serif; 
-    margin-top: 8px;
+    font-family: 'LatoRegular'; 
+    margin-top: 9px;
     text-align: justify;
-    letter-spacing: -0.004em;
+    letter-spacing: -0.01px;
+    word-spacing: -0.2px;
     font-size: 12px;
-    line-height: 22px;
+    line-height: 21px;
     color: #f0d8d9;
 }
 
@@ -574,7 +591,7 @@ form{
 }
 
 .contact__address {
-    margin: 23px 3px 0;
+    margin: 26px 3px 0;
   }
 
 .contact__phone {
