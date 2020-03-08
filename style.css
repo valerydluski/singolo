@@ -119,7 +119,7 @@ a:hover{
     position: absolute;
     left: -16px;
     top: -7px;
-    font-size: bold;
+    font-weight: bold;
     color: #494e62;
   }
 
@@ -539,7 +539,7 @@ form{
     border-radius: 6px;
 }
 
-::-webkit-input-placeholder {color: #f48c8f;}
+
 
 .form__textarea{
     font-family: "latoRegular";
