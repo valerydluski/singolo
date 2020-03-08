@@ -530,7 +530,7 @@ form{
 
 .form__input{
     font-family: "latoRegular";
-    color: black;
+    color: blanchedalmond;
     height: 38px;
     margin-bottom: 16px;
     padding-left: 15px;
@@ -544,7 +544,7 @@ form{
 
 .form__textarea{
     font-family: "latoRegular";
-    color: greenyellow;
+    color:  blanchedalmond;
     background-color: #d6564f;
     height: 202px;
     padding-top: 11px;
@@ -554,6 +554,7 @@ form{
     border: none;
     border-radius: 6px;
     resize: none;
+    
 }
 
 .form__button{
@@ -726,3 +727,8 @@ footer{
 .form__input:required:focus:invalid {
     background-color: #ff0000;
 }
+
+input::-webkit-input-placeholder { color: #f48c8f; }
+input::-moz-placeholder { color: #f48c8f; }
+textarea::-webkit-input-placeholder { color: #f48c8f; }
+textarea::-moz-placeholder { color: #f48c8f; }
