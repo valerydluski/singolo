@@ -290,11 +290,12 @@ svg {
     border-bottom: 6px solid #323746;   
 }
 
-.h1__portfolio{
+.h2__portfolio{
     font-family: 'LatoBlack';
     font-size: 30px;
     color: #666d89;
     padding-top: 59px;
+    padding-left: 40px;
     letter-spacing: normal; 
 }
 
