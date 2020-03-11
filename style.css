@@ -89,7 +89,7 @@ ul li {
     transition: color .3s;
 }
 
-.nav__link__home{
+.nav__link__active{
     font-family: "latoBold";
     color: #f06c64;
     font-size: 12px;
