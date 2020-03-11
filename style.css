@@ -89,15 +89,7 @@ ul li {
     transition: color .3s;
 }
 
-.nav__link__active{
-    font-family: "latoBold";
-    color: #f06c64;
-    font-size: 12px;
-    font-weight: 700;
-    display: block;
-    letter-spacing: -0.3px;
-    text-decoration: none;
-}
+
 
 .nav__link{
     font-family: "latoBold";
@@ -108,6 +100,10 @@ ul li {
     display: block;
     letter-spacing: -0.3px;
     text-decoration: none;
+}
+
+.nav-active{
+    color: #f06c64;
 }
 
 a:hover{
