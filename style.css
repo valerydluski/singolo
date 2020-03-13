@@ -42,6 +42,7 @@
 }
 
 .wrapper_header{
+    
     margin: 0 ;
     height: inherit;
     align-items: center;
@@ -728,3 +729,109 @@ input::-webkit-input-placeholder { color: #f48c8f; }
 input::-moz-placeholder { color: #f48c8f; }
 textarea::-webkit-input-placeholder { color: #f48c8f; }
 textarea::-moz-placeholder { color: #f48c8f; }
+
+#message-block{
+    margin: 0px;
+    padding: 0px;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #0008;
+}
+
+#message-block.post__message{
+    display: none;
+}
+
+#message{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.grid__portfolio_image__container{
+    border: 5px ;
+    border-color: blanchedalmond ;
+    
+}
+
+.horizontalPhone__off{
+    background-color: black;
+    height: 191px;
+    width: 335px;
+    margin-left: 442px;
+    margin-top: -12px;
+    position: absolute;
+    
+}
+
+.verticalPhone__off{
+    background-color: black;
+    height: 335px;
+    width: 191px;
+    margin-left: 82px;
+    margin-top: -10px;
+    position: absolute;
+}
+.button__vertical-on{
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    margin-top: 187px;
+    margin-left: 171px;
+    border: none;
+    
+}
+.button__vertical-on:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.button__horizontal-on{
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    margin-top: -13px;
+    margin-left: 406px;
+    border: none;
+}
+.button__horizontal-on:hover{
+    cursor: pointer;
+    background-color: red;
+}
+.display__on{
+    display: none;
+}
+.button__off{
+    display: none;  
+}
+
+.button__vertical-off{
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    margin-top: 187px;
+    margin-left: 171px;
+    border: none;
+}
+.button__vertical-off:hover{
+    cursor: pointer;
+    background-color: green;
+}
+.button__horizontal-off{
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    margin-top: -13px;
+    margin-left: 406px;
+    border: none;
+}
+.button__horizontal-off:hover{
+    cursor: pointer;
+    background-color: green;
+}
