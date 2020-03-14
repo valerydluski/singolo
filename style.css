@@ -125,6 +125,11 @@ a:hover{
     background-color: #f06c64;
     border-bottom: 6px solid #ea676b;
 }
+.wrapper__slider.blue__slider{ 
+    height: 600px;
+    background-color: #648BF0;
+    border-bottom: 6px solid #ea676b;
+}
 
 .slider{
     position: absolute;
@@ -860,6 +865,7 @@ textarea::-moz-placeholder { color: #f48c8f; }
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    
 }
 .active,
 .next {
@@ -870,7 +876,10 @@ textarea::-moz-placeholder { color: #f48c8f; }
     top: 0;
     width: 100%;
   }
-
+.slide-blue{
+    background-color: #648BF0;
+    height: 100%;
+}
 
 .to-left{
     animation-name: left ;
