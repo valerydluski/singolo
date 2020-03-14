@@ -44,14 +44,57 @@ SHUFF_ALL.addEventListener('click', (event) => {
     event.target.classList.add('active__button');
   });
 
-//sript for form
-BUTTON__SUBMIT.addEventListener('click', () => {
-    const subject = document.getElementById('subject').value.toString();
-    document.getElementById('result').innerText = subject;
-    document.getElementById('message__block').classList.remove('post__message');
-})
+//script for slider
+let slides = document.querySelectorAll('.slider .slide');
+let currentSlide = 0;
+let isEnabled = true;
 
-BUTTON__CLOSE.addEventListener('click', () => {
-    document.getElementById('result').innerText = '';
-    document.getElementById('message__block').classList.add('post__message');
-})
+function changeCurrentSlide(n) {
+	currentSlide = (n + slides.length) % slides.length;
+}
+
+function hideSlide(direction) {
+	isEnabled = false;
+	slides[currentSlide].classList.add(direction);
+	slides[currentSlide].addEventListener('animationend', function() {
+		this.classList.remove('active', direction);
+	});
+}
+
+function showSlide(direction) {
+	slides[currentSlide].classList.add('next', direction);
+	slides[currentSlide].addEventListener('animationend', function() {
+		this.classList.remove('next', direction);
+		this.classList.add('active');
+		isEnabled = true;
+	});
+}
+
+function nextSlide(n) {
+	hideSlide('to-left');
+	changeCurrentSlide(n + 1);
+	showSlide('from-right');
+}
+
+function previousSlide(n) {
+	hideSlide('to-right');
+	changeCurrentSlide(n - 1);
+	showSlide('from-left');
+}
+
+document.querySelector('.left').addEventListener('click', function() {
+	if (isEnabled) {
+		previousSlide(currentSlide);
+	}
+});
+
+document.querySelector('.right').addEventListener('click', function() {
+	if (isEnabled) {
+		nextSlide(currentSlide);
+	}
+});
+
+
+
+
+//sript for form

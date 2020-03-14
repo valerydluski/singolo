@@ -3,13 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Singolo</title>
+    <title>Singolo-DOM</title>
     <link rel="stylesheet" href="style.css">
     
   </head>
   <body>
     <header>
-       
         <div class="wrapper">
             <div class="wrapper_header">
                 <h1 id="logotip">
@@ -23,27 +22,34 @@
                     <li><a class="nav__link" href="#portfolio_link"> PORTFOLIO</a></li>
                     <li><a class="nav__link" href="#about-us__link">ABOUT</a></li>
                     <li><a class="nav__link" href="#contact__link">CONTACT</a></li>
-                </ul>
-                
+                </ul> 
                 </nav>
             </div>
         </div>
     </header>
     
-
     <main>
         <div class="wrapper__slider">
-            <div class="slider" id="phones">
-                <img class="left" src="./assets/img/left.png" alt="previous">
-                <img class="verticalPhone" src="./assets/img/verticalPhone.png" alt="vertical phone">
-                <img class="horizontalPhone" src="./assets/img/horizontalPhone.png" alt="horizontal phone">      
-                <img class="right" src="./assets/img/right.png" alt="next">
-                <div class="verticalPhone__off display__on" id="phone-vertical"></div>
-                <div class="horizontalPhone__off display__on" id="phone-horizontal"></div>
-                <button class="button__vertical-on" id="button-vertical"></button>
-                <button class="button__horizontal-on" id="button-horizontal"></button>
-                <button class="button__vertical-off button__off" id="button-vertical-off"></button>
-                <button class="button__horizontal-off button__off" id="button-horizontal-off"></button>
+            <div class="wrapper">
+                <div class="slider" id="carousel">
+                    <img class="left" src="./assets/img/left.png" alt="previous" id="left"> 
+                    <div class="slider-container">                    
+                        <div class="slide active">
+                            <img class="verticalPhone" src="./assets/img/verticalPhone.png" alt="vertical phone">
+                            <img class="horizontalPhone" src="./assets/img/horizontalPhone.png" alt="horizontal phone">     
+                            <div class="verticalPhone-off display__on" id="phone-vertical"></div>
+                            <div class="horizontalPhone-off display__on" id="phone-horizontal"></div>
+                            <button class="button__vertical-on" id="button-vertical"></button>
+                            <button class="button__horizontal-on" id="button-horizontal"></button>
+                            <button class="button__vertical-off button__off" id="button-vertical-off"></button>
+                            <button class="button__horizontal-off button__off" id="button-horizontal-off"></button>
+                        </div> 
+                        <div class="slide">   
+                            <object type="image/svg+xml" data="./assets/img/phones.svg" class="phones"></object>
+                        </div>     
+                    </div>
+                    <img class="right" src="./assets/img/right.png" alt="next" id="right">       
+                </div>
             </div>
         </div>
             <section class="wrapper__services">
@@ -110,7 +116,7 @@
                     </article>
                 </div>
             </section>  
-
+           
         <section class="portfolio">
             <div class="wrapper">
                 <h2 class="h2__portfolio" id="portfolio_link">Portfolio</h2>
