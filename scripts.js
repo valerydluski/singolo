@@ -59,6 +59,7 @@ function hideSlide(direction) {
 	slides[currentSlide].addEventListener('animationend', function() {
 		this.classList.remove('active', direction);
 	});
+	
 }
 
 function showSlide(direction) {
@@ -85,6 +86,7 @@ function previousSlide(n) {
 document.querySelector('.left').addEventListener('click', function() {
 	if (isEnabled) {
 		previousSlide(currentSlide);
+		
 	}
 });
 
@@ -94,6 +96,7 @@ document.querySelector('.right').addEventListener('click', function() {
 	}
 });
 
+//script for picture in portfolio
 
 
 
