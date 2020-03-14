@@ -248,11 +248,11 @@
                  <p class="p__quote">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                  <div class="contact__form">
                      <section class="form__container">
-                         <form method="POST">
+                         <form action="/#" method="POST" id="form" onsubmit="return false">
                              <input class="form__input" type="text" name="name" placeholder="Name (Required)" required>
                              <input class="form__input" type="email" name="email" placeholder="Email (Required)" required>
                              <input  id="subject" class="form__input" type="text" name="subject" placeholder="Subject">
-                             <textarea  class="form__textarea" name="comment" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>   
+                             <textarea id="describe" class="form__textarea" name="comment" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>   
                              <button id="BUTTON__SUBMIT" class="form__button" type="submit" formmethod="POST">Submit</button> 
                          </form>
                          
@@ -268,7 +268,9 @@
                      </div>
                      <div id="message-block" class="post__message">
                         <div id="message">
-                           <p>Тема: <span id="result"></span></p>
+                           <p>Письмо отправлено</p>
+                           <p><span id="subject-text"></span></p>
+                           <p><span id="describe-text"></span></p>
                            <br>
                            <button id="BUTTON__CLOSE">OK</button>
                         </div>

@@ -1,11 +1,6 @@
+//script for navigation panel
 const NAVIGATION = document.getElementById('NAVIGATION');
 
-const SHUFF_ALL = document.getElementById('button-all')
-
-const BUTTON__SUBMIT = document.getElementById('BUTTON__SUBMIT');
-const BUTTON__CLOSE = document.getElementById('BUTTON__CLOSE');
-
-//script for navigation panel
 NAVIGATION.addEventListener('click', (event) => {
     NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
     event.target.classList.add('nav-active');
@@ -38,6 +33,8 @@ document.getElementById('button-horizontal-off').addEventListener('click', (even
 });
    
 //sript for buttons in portfolio 
+const SHUFF_ALL = document.getElementById('button-all');
+
 SHUFF_ALL.addEventListener('click', (event) => {
     [...portfolio__grid.children].sort(() => Math.random() > 0.5 ? 1 : -1).forEach(f => portfolio__grid.appendChild(f));
     SHUFF_ALL.querySelectorAll('button').forEach(el => el.classList.remove('active__button'));
@@ -96,8 +93,42 @@ document.querySelector('.right').addEventListener('click', function() {
 	}
 });
 
-//script for picture in portfolio
 
+
+//script for picture in portfolio
+const portfolioImg = document.getElementById('portfolio__grid');
+
+portfolioImg .addEventListener('click', (event) => {
+    portfolioImg .querySelectorAll('img').forEach(el => el.classList.remove('active-img'));
+    event.target.classList.add('active-img');
+})
 
 
 //sript for form
+
+const BUTTON__SUBMIT = document.getElementById('BUTTON__SUBMIT');
+const BUTTON__CLOSE = document.getElementById('BUTTON__CLOSE');
+
+BUTTON__SUBMIT.addEventListener('click', ()=>{
+	let subject = document.getElementById('subject').value.toString();
+	let describe = document.getElementById('describe').value.toString();
+	if(subject.length==0){
+		document.getElementById('subject-text').innerText = 'Без темы';
+	}
+	else{
+		document.getElementById('subject-text').innerText = 'Тема:\u00A0'+subject;
+	}
+	if(describe.length==0){
+		document.getElementById('describe-text').innerText = 'Без описания';
+	}
+	else{
+		document.getElementById('describe-text').innerText = 'Описание:\u00A0'+describe;
+	}
+	document.getElementById('message-block').classList.remove('post__message')
+});	
+
+BUTTON__CLOSE.addEventListener('click', ()=>{
+	document.getElementById('subject-text').innerText = '';
+	document.getElementById('describe-text').innerText = '';
+	document.getElementById('message-block').classList.add('post__message');
+});	
