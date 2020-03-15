@@ -45,6 +45,7 @@ SHUFF_ALL.addEventListener('click', (event) => {
 let slides = document.querySelectorAll('.slider .slide');
 let currentSlide = 0;
 let isEnabled = true;
+let slider = document.getElementById('slider-wrapper');
 
 function changeCurrentSlide(n) {
 	currentSlide = (n + slides.length) % slides.length;
@@ -83,13 +84,21 @@ function previousSlide(n) {
 document.querySelector('.left').addEventListener('click', function() {
 	if (isEnabled) {
 		previousSlide(currentSlide);
-		
+		if (slider.classList[1] == 'blue-slider') {
+			slider.classList.remove('blue-slider');
+		}
+		else { slider.classList.add('blue-slider'); }	
 	}
+
 });
 
 document.querySelector('.right').addEventListener('click', function() {
 	if (isEnabled) {
 		nextSlide(currentSlide);
+		if (slider.classList[1] == 'blue-slider') {
+			slider.classList.remove('blue-slider');
+		}
+		else { slider.classList.add('blue-slider'); }
 	}
 });
 

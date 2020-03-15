@@ -34,9 +34,12 @@ h3 {
   font-weight: 900;
 }
 
-.wrapper_header {
+header {
   background-color: #2d303a;
   border-bottom: 6px solid #323746;
+}
+
+.wrapper_header {
   align-items: center;
   color: white;
   display: flex;
@@ -100,10 +103,11 @@ a:hover {
 
 .wrapper__slider {
   height: 600px;
+  background-color: #f06c64;
+  border-bottom: 6px solid #ea676b;
 }
 
-.blue__slider {
-  height: 600px;
+.wrapper__slider.blue-slider {
   background-color: #648BF0;
   border-bottom: 6px solid blue;
 }
@@ -114,8 +118,6 @@ a:hover {
   justify-content: space-between;
   height: 600px;
   width: 1020px;
-  background-color: #f06c64;
-  border-bottom: 6px solid #ea676b;
 }
 
 .verticalPhone {
@@ -797,8 +799,11 @@ form {
   text-align: center;
 }
 
-.footer__content {
+footer {
   background-color: #2d303a;
+}
+
+.footer__content {
   height: 76px;
   display: flex;
   justify-content: space-between;
