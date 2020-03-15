@@ -106,12 +106,17 @@ portfolioImg .addEventListener('click', (event) => {
 
 //sript for form
 
+
 const BUTTON__SUBMIT = document.getElementById('BUTTON__SUBMIT');
 const BUTTON__CLOSE = document.getElementById('BUTTON__CLOSE');
+
+
 
 BUTTON__SUBMIT.addEventListener('click', ()=>{
 	let subject = document.getElementById('subject').value.toString();
 	let describe = document.getElementById('describe').value.toString();
+	
+
 	if(subject.length==0){
 		document.getElementById('subject-text').innerText = 'Без темы';
 	}
@@ -124,8 +129,10 @@ BUTTON__SUBMIT.addEventListener('click', ()=>{
 	else{
 		document.getElementById('describe-text').innerText = 'Описание:\u00A0'+describe;
 	}
+	if (document.getElementById('name').checkValidity() && document.getElementById('email').checkValidity()){
 	document.getElementById('message-block').classList.remove('post__message')
-});	
+	}
+});
 
 BUTTON__CLOSE.addEventListener('click', ()=>{
 	document.getElementById('subject-text').innerText = '';
