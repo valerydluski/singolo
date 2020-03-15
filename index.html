@@ -3,43 +3,58 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Singolo</title>
+    <title>Singolo-DOM</title>
     <link rel="stylesheet" href="style.css">
+    
   </head>
   <body>
     <header>
         <div class="wrapper">
             <div class="wrapper_header">
-                <h1>
+                <h1 id="logotip">
                     <span>SINGOLO</span>
                     <span class="h1Star">*</span>
                 </h1>
                 <nav>
-                <ul class="header__nav">
-                    <li><a class="nav__link__home" href="#">HOME</a></li>
-                    <li><a class="nav__link" href="#">SERVICES</a></li>
-                    <li><a class="nav__link" href="#"> PORTFOLIO</a></li>
-                    <li><a class="nav__link" href="#">ABOUT</a></li>
-                    <li><a class="nav__link" href="#">CONTACT</a></li>
-                </ul>
+                <ul class="header__nav" id="NAVIGATION">
+                    <li><a class="nav__link nav-active" href="#logotip">HOME</a></li>
+                    <li><a class="nav__link" href="#services">SERVICES</a></li>
+                    <li><a class="nav__link" href="#portfolio_link"> PORTFOLIO</a></li>
+                    <li><a class="nav__link" href="#about-us__link">ABOUT</a></li>
+                    <li><a class="nav__link" href="#contact__link">CONTACT</a></li>
+                </ul> 
                 </nav>
             </div>
         </div>
     </header>
     
-
     <main>
-        <div class="wrapper__slider">
-            <div class="slider">
-                <img class="left" src="./assets/img/left.png" alt="previous">
-                <img class="verticalPhone" src="./assets/img/verticalPhone.png" alt="vertical phone">
-                <img class="horizontalPhone" src="./assets/img/horizontalPhone.png" alt="horizontal phone">
-                <img class="right" src="./assets/img/right.png" alt="next">
+        <div class="wrapper__slider" id="slider-wrapper">
+            <div class="wrapper">
+                <div class="slider" id="carousel">
+                    <img class="left" src="./assets/img/left.png" alt="previous" id="left"> 
+                    <div class="slider-container">                    
+                        <div class="slide active">
+                            <img class="verticalPhone" src="./assets/img/verticalPhone.png" alt="vertical phone">
+                            <img class="horizontalPhone" src="./assets/img/horizontalPhone.png" alt="horizontal phone">     
+                            <div class="verticalPhone-off display__on" id="phone-vertical"></div>
+                            <div class="horizontalPhone-off display__on" id="phone-horizontal"></div>
+                            <button class="button__vertical-on" id="button-vertical"></button>
+                            <button class="button__horizontal-on" id="button-horizontal"></button>
+                            <button class="button__vertical-off button__off" id="button-vertical-off"></button>
+                            <button class="button__horizontal-off button__off" id="button-horizontal-off"></button>
+                        </div> 
+                        <div class="slide">   
+                            <object type="image/svg+xml" data="./assets/img/phones.svg" class="phones"></object>
+                        </div>     
+                    </div>
+                    <img class="right" src="./assets/img/right.png" alt="next" id="right">       
+                </div>
             </div>
         </div>
-            <section class="wrapper__services">
-                <div class="wrapper">
-                    <h2>Our Services</h2>
+        <div class="wrapper__services">
+                <section class="wrapper">
+                    <h2 id="services">Our Services</h2>
                     <div class="ourServicesContainer">
                         <p class="ourServicesText">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                     </div>
@@ -99,22 +114,21 @@
                             </div>
                         </div>
                     </article>
-                </div>
-            </section>  
-
-        <section class="portfolio">
+                </section>  
+        </div>
+        <section class="portfolio">        
             <div class="wrapper">
-                <h2 class="h2__portfolio">Portfolio</h2>
+                <h2 class="h2__portfolio" id="portfolio_link">Portfolio</h2>
                 <p class="portfolio__p">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                <div class="ul__portfolio__container">
+                <div class="ul__portfolio__container" id="button-all">
                     <ul>
                         <li><button class="active__button">All</button></li>
-                        <li><button>Web Design</button></li>
-                        <li><button>Graphic Design</button></li>
-                        <li><button>Artwork</button></li>
+                        <li><button >Web Design</button></li>
+                        <li><button >Graphic Design</button></li>
+                        <li><button >Artwork</button></li>
                     </ul>
                 </div>
-                <article class="grid__portfolio">
+                <article class="grid__portfolio" id="portfolio__grid" >
                     <div class="grid__portfolio_image__container">
                         <img src="./assets/img/ship.jpg" alt="ship" class="grid__portfolio_image">
                     </div>
@@ -152,11 +166,11 @@
                         <img src="./assets/img/envelope.jpg" alt="envelope" class="grid__portfolio_image">
                     </div>
                 </article>
-            </div>    
-        </section> 
-        <section class="adoutUs">
+            </div> 
+        </section>
+        <section class="adoutUs">     
             <div class="wrapper">
-                <h2 class="h2__aboutUs">About Us</h2>
+                <h2 class="h2__aboutUs" id="about-us__link">About Us</h2>
                 <div class="p__aboutUs__container">
                     <p class="p__aboutUs">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 </div>
@@ -225,21 +239,22 @@
                         </div>
                     </div>    
                 </article>
-            </div>
+            </div>    
         </section>
         <div class="quote__container">
             <div class="wrapper">
-                 <h2 class="h2__quote">Get a Quote</h2>
+                 <h2 class="h2__quote" id="contact__link">Get a Quote</h2>
                  <p class="p__quote">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                  <div class="contact__form">
                      <section class="form__container">
-                         <form method="POST">
-                             <input class="form__input" type="text" name="name" placeholder="Name (Required)" required>
-                             <input class="form__input" type="email" name="email" placeholder="Email (Required)" required>
-                             <input class="form__input" type="text" name="subject" placeholder="Subject">
-                             <textarea class="form__textarea" name="comment" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>
-                             <button class="form__button" type="submit" formmethod="POST">Submit</button>
+                         <form action="/#" method="POST" id="form" onsubmit="return false">
+                             <input id="name" class="form__input" type="text" name="name" placeholder="Name (Required)" required>
+                             <input id="email" class="form__input" type="email" name="email" placeholder="Email (Required)" required>
+                             <input  id="subject" class="form__input" type="text" name="subject" placeholder="Subject">
+                             <textarea id="describe" class="form__textarea" name="comment" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>   
+                             <button id="BUTTON__SUBMIT" class="form__button" type="submit" formmethod="POST">Submit</button> 
                          </form>
+                         
                      </section>    
                      <div class="contact__info">
                          <h3>Contact Information</h3>
@@ -249,31 +264,43 @@
                             <a class="contact__phone" href="tel:035283318635">03528 331 86 35</a>
                             <a class="contact__email" href="mailto:info@singolo.com">info@singolo.com</a>
                         </div>     
-                     </div>    
+                     </div>
+                     <div id="message-block" class="post__message">
+                        <div id="message">
+                           <p>Письмо отправлено</p>
+                           <p><span id="subject-text"></span></p>
+                           <p><span id="describe-text"></span></p>
+                           <br>
+                           <button id="BUTTON__CLOSE">OK</button>
+                        </div>
+                    </div>    
                  </div>
              </div>
         </div>
     </main>
     <footer>
-        <div class="wrapper footer__content">
-            <div class="footer__copy">
-                &copy; Copyright 2013 · by PSDchat.com
-            </div>
-            <div class="footer__ico">
-                <a class="footer__social_ico" href="#">
-                    <object type="image/svg+xml" data="./assets/img/ico-facebook.svg" class="facebook"></object>
-                </a>
-                <a class="footer__social_ico" href="#">
-                    <object type="image/svg+xml" data="./assets/img/ico-google-plus.svg" class="google"></object>
-                </a>
-                <a class="footer__social_ico" href="#">
-                    <object type="image/svg+xml" data="./assets/img/ico-twitter.svg" class="twitter"></object>
-                </a>
-                <a class="footer__social_ico" href="#">
-                    <object type="image/svg+xml" data="./assets/img/ico-linkedin.svg" class="linkedin"></object>
-                </a>
-            </div>
+        <div class="wrapper">
+            <div class="footer__content">
+                <div class="footer__copy">
+                    &copy; Copyright 2013 · by PSDchat.com
+                </div>
+                <div class="footer__ico">
+                    <a class="footer__social_ico" href="#">
+                        <object type="image/svg+xml" data="./assets/img/ico-facebook.svg" class="facebook"></object>
+                    </a>
+                    <a class="footer__social_ico" href="#">
+                        <object type="image/svg+xml" data="./assets/img/ico-google-plus.svg" class="google"></object>
+                    </a>
+                    <a class="footer__social_ico" href="#">
+                        <object type="image/svg+xml" data="./assets/img/ico-twitter.svg" class="twitter"></object>
+                    </a>
+                    <a class="footer__social_ico" href="#">
+                        <object type="image/svg+xml" data="./assets/img/ico-linkedin.svg" class="linkedin"></object>
+                    </a>
+                </div>
+            </div>    
         </div>
    </footer> 
+   <script src="./scripts.js"></script>
   </body>
 </html>
