@@ -36,9 +36,11 @@ document.getElementById('button-horizontal-off').addEventListener('click', (even
 const SHUFF_ALL = document.getElementById('button-all');
 
 SHUFF_ALL.addEventListener('click', (event) => {
-    [...portfolio__grid.children].sort(() => Math.random() > 0.5 ? 1 : -1).forEach(f => portfolio__grid.appendChild(f));
-    SHUFF_ALL.querySelectorAll('button').forEach(el => el.classList.remove('active__button'));
-    event.target.classList.add('active__button');
+	if(event.target.tagName === "BUTTON"){
+		[...portfolio__grid.children].sort(() => Math.random() > 0.5 ? 1 : -1).forEach(f => portfolio__grid.appendChild(f));
+		SHUFF_ALL.querySelectorAll('button').forEach(el => el.classList.remove('active__button'));
+		event.target.classList.add('active__button');
+	}	
   });
 
 //script for slider

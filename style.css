@@ -141,10 +141,21 @@ a:hover {
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
 }
+@media (min-width: 768px) and (max-width: 1020px) {
+  .wrapper__slider {
+    height: 452px;
+    border-bottom: 4.52px solid #ea676b;
+  }
+}
 
 .wrapper__slider.blue-slider {
   background-color: #648BF0;
   border-bottom: 6px solid blue;
+}
+@media (min-width: 768px) and (max-width: 1020px) {
+  .wrapper__slider.blue-slider {
+    border-bottom: 4.52px solid blue;
+  }
 }
 
 .slider {
@@ -153,6 +164,11 @@ a:hover {
   justify-content: space-between;
   height: 600px;
   width: 1020px;
+}
+@media (min-width: 768px) and (max-width: 1020px) {
+  .slider {
+    height: 452px;
+  }
 }
 
 .vertical-phone {
@@ -470,12 +486,10 @@ svg {
 .ul__portfolio__container ul {
   display: flex;
   list-style: none;
-  max-width: 300px;
 }
 .ul__portfolio__container ul li {
   list-style: none;
   display: inline-block;
-  width: auto;
 }
 .ul__portfolio__container ul li button {
   text-decoration: none;
