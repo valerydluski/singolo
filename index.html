@@ -35,8 +35,8 @@
                     <img class="left" src="./assets/img/left.png" alt="previous" id="left"> 
                     <div class="slider-container">                    
                         <div class="slide active">
-                            <img class="verticalPhone" src="./assets/img/verticalPhone.png" alt="vertical phone">
-                            <img class="horizontalPhone" src="./assets/img/horizontalPhone.png" alt="horizontal phone">     
+                            <img class="vertical-phone" src="./assets/img/verticalPhone.png" alt="vertical phone">
+                            <img class="horizontal-phone" src="./assets/img/horizontalPhone.png" alt="horizontal phone">     
                             <div class="verticalPhone-off display__on" id="phone-vertical"></div>
                             <div class="horizontalPhone-off display__on" id="phone-horizontal"></div>
                             <button class="button__vertical-on" id="button-vertical"></button>
@@ -120,8 +120,8 @@
             <div class="wrapper">
                 <h2 class="h2__portfolio" id="portfolio_link">Portfolio</h2>
                 <p class="portfolio__p">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-                <div class="ul__portfolio__container" id="button-all">
-                    <ul>
+                <div class="ul__portfolio__container" >
+                    <ul id="button-all">
                         <li><button class="active__button">All</button></li>
                         <li><button >Web Design</button></li>
                         <li><button >Graphic Design</button></li>
@@ -268,8 +268,8 @@
                      <div id="message-block" class="post__message">
                         <div id="message">
                            <p>Письмо отправлено</p>
-                           <p><span id="subject-text"></span></p>
-                           <p><span id="describe-text"></span></p>
+                           <div class="subject-container"><p><span id="subject-text"></span></p></div>
+                           <div class="describe-container"><p><span id="describe-text"></span></p></div>
                            <br>
                            <button id="BUTTON__CLOSE">OK</button>
                         </div>
