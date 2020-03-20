@@ -6,6 +6,23 @@ NAVIGATION.addEventListener('click', (event) => {
     event.target.classList.add('nav-active');
 })
 
+document.addEventListener('scroll', onScroll);
+
+function onScroll(event){
+	const curPos = window.scrollY;
+	const links = document.querySelectorAll('#NAVIGATION a');
+
+	document.querySelectorAll('body .divide').forEach((el)=>{	
+		if(el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos){
+			links.forEach((a) => {
+				a.classList.remove('nav-active');
+				if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
+					a.classList.add('nav-active')
+				}
+			})
+		}
+	}); 
+}
 //script for button in vertical phone
 document.getElementById('button-vertical').addEventListener('click', (event) => {
     document.getElementById('phone-vertical').classList.remove('display__on');
@@ -148,5 +165,7 @@ BUTTON__SUBMIT.addEventListener('click', ()=>{
 BUTTON__CLOSE.addEventListener('click', ()=>{
 	document.getElementById('subject-text').innerText = '';
 	document.getElementById('describe-text').innerText = '';
+	document.getElementById('form').reset();
 	document.getElementById('message-block').classList.add('post__message');
+
 });	

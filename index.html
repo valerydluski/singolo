@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="style.css">
     
   </head>
-  <body>
+  <body id="home_link">
     <header>
-        <div class="wrapper">
+        <div class="wrapper" id="logotip">
             <div class="wrapper_header">
-                <h1 id="logotip">
+                <h1>
                     <span>SINGOLO</span>
                     <span class="h1Star">*</span>
                 </h1>
                 <nav>
                 <ul class="header__nav" id="NAVIGATION">
-                    <li><a class="nav__link nav-active" href="#logotip">HOME</a></li>
+                    <li><a class="nav__link nav-active" href="#home_link">HOME</a></li>
                     <li><a class="nav__link" href="#services">SERVICES</a></li>
                     <li><a class="nav__link" href="#portfolio_link"> PORTFOLIO</a></li>
                     <li><a class="nav__link" href="#about-us__link">ABOUT</a></li>
@@ -28,10 +28,10 @@
         </div>
     </header>
     
-    <main>
+    <main >
         <div class="wrapper__slider" id="slider-wrapper">
             <div class="wrapper">
-                <div class="slider" id="carousel">
+                <div class="slider" id="carousel" >
                     <img class="left" src="./assets/img/left.png" alt="previous" id="left"> 
                     <div class="slider-container">                    
                         <div class="slide active">
@@ -52,9 +52,9 @@
                 </div>
             </div>
         </div>
-        <div class="wrapper__services">
+        <div class="divide wrapper__services" id="services">
                 <section class="wrapper">
-                    <h2 id="services">Our Services</h2>
+                    <h2>Our Services</h2>
                     <div class="ourServicesContainer">
                         <p class="ourServicesText">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                     </div>
@@ -116,9 +116,9 @@
                     </article>
                 </section>  
         </div>
-        <section class="portfolio">        
+        <section class="divide portfolio" id="portfolio_link">        
             <div class="wrapper">
-                <h2 class="h2__portfolio" id="portfolio_link">Portfolio</h2>
+                <h2 class="h2__portfolio" >Portfolio</h2>
                 <p class="portfolio__p">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
                 <div class="ul__portfolio__container" >
                     <ul id="button-all">
@@ -168,9 +168,9 @@
                 </article>
             </div> 
         </section>
-        <section class="adoutUs">     
+        <section class="divide adoutUs" id="about-us__link">     
             <div class="wrapper">
-                <h2 class="h2__aboutUs" id="about-us__link">About Us</h2>
+                <h2 class="h2__aboutUs" >About Us</h2>
                 <div class="p__aboutUs__container">
                     <p class="p__aboutUs">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                 </div>
@@ -241,9 +241,9 @@
                 </article>
             </div>    
         </section>
-        <div class="quote__container">
+        <div class="divide quote__container" id="contact__link">
             <div class="wrapper">
-                 <h2 class="h2__quote" id="contact__link">Get a Quote</h2>
+                 <h2 class="h2__quote" >Get a Quote</h2>
                  <p class="p__quote">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
                  <div class="contact__form">
                      <section class="form__container">
@@ -254,7 +254,6 @@
                              <textarea id="describe" class="form__textarea" name="comment" placeholder="Describe your project in detail..." cols="30" rows="13"></textarea>   
                              <button id="BUTTON__SUBMIT" class="form__button" type="submit" formmethod="POST">SEND</button> 
                          </form>
-                         
                      </section>    
                      <div class="contact__info">
                          <h3>Contact Information</h3>
