@@ -1,3 +1,4 @@
+
 //script for navigation panel
 const NAVIGATION = document.getElementById('NAVIGATION');
 
@@ -10,18 +11,27 @@ document.addEventListener('scroll', onScroll);
 
 function onScroll(event){
 	const curPos = window.scrollY;
-	const links = document.querySelectorAll('#NAVIGATION a');
 
-	document.querySelectorAll('body .divide').forEach((el)=>{	
-		if(el.offsetTop <= curPos && (el.offsetTop + el.offsetHeight) > curPos){
-			links.forEach((a) => {
-				a.classList.remove('nav-active');
-				if(el.getAttribute('id') === a.getAttribute('href').substring(1)){
-					a.classList.add('nav-active')
-				}
-			})
-		}
-	}); 
+	if(curPos<600) {
+		NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
+        NAVIGATION.querySelectorAll('a')[0].classList.add('nav-active');
+    }
+	if(curPos>=600&&curPos<1100) {
+		NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
+        NAVIGATION.querySelectorAll('a')[1].classList.add('nav-active');
+	}
+	if(curPos>=1100&&curPos<1966) {
+		NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
+        NAVIGATION.querySelectorAll('a')[2].classList.add('nav-active');
+	}
+	if(curPos>=1966&&curPos<2700) {
+		NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
+        NAVIGATION.querySelectorAll('a')[3].classList.add('nav-active');
+	}
+	if(curPos>=2700) {
+		NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
+        NAVIGATION.querySelectorAll('a')[4].classList.add('nav-active');
+    }
 }
 //script for button in vertical phone
 document.getElementById('button-vertical').addEventListener('click', (event) => {
