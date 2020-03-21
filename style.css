@@ -20,15 +20,6 @@ h1 {
   font-size: 24px;
   font-weight: 900;
 }
-@media (min-width: 768px) and (max-width: 1020px) {
-  h1 {
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 30px;
-    letter-spacing: -0.03em;
-  }
-}
 
 h2 {
   font-family: "LatoBlack";
@@ -121,21 +112,10 @@ a:hover {
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
 }
-@media (max-width: 768px) {
-  .wrapper__slider {
-    height: 452px;
-    border-bottom: 4.52px solid #ea676b;
-  }
-}
 
 .wrapper__slider.blue-slider {
   background-color: #648BF0;
   border-bottom: 6px solid blue;
-}
-@media (max-width: 768px) {
-  .wrapper__slider.blue-slider {
-    border-bottom: 4.52px solid blue;
-  }
 }
 
 .slider {
@@ -144,30 +124,13 @@ a:hover {
   height: 600px;
   width: 1020px;
 }
-@media (max-width: 768px) {
-  .slider {
-    height: 452px;
-  }
-}
 
 .vertical-phone {
   padding: 0px 0px 11px 53px;
 }
-@media (max-width: 768px) {
-  .vertical-phone {
-    max-width: 180.71px;
-    max-height: 388.07px;
-  }
-}
 
 .horizontal-phone {
   padding: 0px 54px 12px 0px;
-}
-@media (max-width: 768px) {
-  .horizontal-phone {
-    max-width: 200.63px;
-    max-height: 363.67px;
-  }
 }
 
 .left {
@@ -176,22 +139,12 @@ a:hover {
   margin: 281px 0px 0px 42px;
   cursor: pointer;
 }
-@media (max-width: 768px) {
-  .left {
-    margin: 215px 0px 0px 30px;
-  }
-}
 
 .right {
   width: 20px;
   height: 26px;
   margin: 281px 39px 0px 0px;
   cursor: pointer;
-}
-@media (max-width: 768px) {
-  .right {
-    margin: 215px 278px 0px 0px;
-  }
 }
 
 .slider-container {
@@ -499,9 +452,9 @@ svg {
   height: 869px;
   border-bottom: 6px solid #323746;
 }
-@media (min-width: 768px) and (max-width: 1020px) {
+@media (min-width: 768px) and (max-width: 1019px) {
   .portfolio {
-    height: 1102px;
+    height: 100%;
   }
 }
 
@@ -523,25 +476,10 @@ svg {
   text-overflow: ellipsis;
   max-height: 45px;
 }
-@media (min-width: 768px) and (max-width: 1020px) {
-  .portfolio__p {
-    line-height: 30px;
-    max-height: 90px;
-    padding-right: 80px;
-    padding-top: 18px;
-    letter-spacing: 0.2px;
-  }
-}
 
 .ul__portfolio__container {
   margin-left: 10px;
   margin-top: 6px;
-}
-@media (min-width: 768px) and (max-width: 1020px) {
-  .ul__portfolio__container {
-    margin-left: 10px;
-    margin-top: 4px;
-  }
 }
 .ul__portfolio__container ul {
   display: flex;
@@ -550,11 +488,6 @@ svg {
 .ul__portfolio__container ul li {
   list-style: none;
   display: inline-block;
-}
-@media (min-width: 768px) and (max-width: 1020px) {
-  .ul__portfolio__container ul li {
-    padding-left: 5px;
-  }
 }
 .ul__portfolio__container ul li button {
   text-decoration: none;
@@ -587,24 +520,21 @@ svg {
 
 .grid__portfolio {
   display: grid;
-  grid-template-rows: 187px 187px 187px;
-  grid-template-columns: 220px 220px 220px 220px;
+  grid-template-areas: "a a a a" "a a a a" "a a a a";
   grid-gap: 20px 20px;
   margin-top: 19px;
   margin-left: 40px;
 }
-@media (min-width: 768px) and (max-width: 1020px) {
+@media (min-width: 768px) and (max-width: 1019px) {
   .grid__portfolio {
-    margin-top: 28px;
-    margin-left: 39px;
-    grid-template-rows: 183.76px 183.76px 183.76px 183.76px;
-    grid-template-columns: 216.19px 216.19px 216.19px;
-    grid-gap: 19px 20px;
+    grid-template-areas: "a a a" "a a a" "a a a" "a a a";
   }
 }
 .grid__portfolio .grid__portfolio_image {
-  max-width: 216.19px;
-  max-height: 183.76px;
+  max-width: 220px;
+  max-height: 187px;
+  width: 100%;
+  height: auto;
 }
 
 .grid__portfolio_image.active-img {
@@ -624,7 +554,7 @@ svg {
   height: 734px;
   border-bottom: 6px solid #ffffff;
 }
-@media (min-width: 768px) and (max-width: 1020px) {
+@media (min-width: 768px) and (max-width: 1019px) {
   .adoutUs {
     height: 669px;
     border: none;
@@ -1080,17 +1010,13 @@ footer {
 }
 
 .wrapper {
-  width: 1020px;
+  max-width: 1020px;
+  width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) and (max-width: 1019px) {
   .wrapper {
-    width: 768px;
-  }
-}
-@media (max-width: 375px) {
-  .wrapper {
-    width: 375px;
+    max-width: 768px;
   }
 }
 

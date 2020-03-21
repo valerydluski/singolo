@@ -1,36 +1,40 @@
 
 //script for navigation panel
 const NAVIGATION = document.getElementById('NAVIGATION');
+const links = NAVIGATION.querySelectorAll('a');
 
 NAVIGATION.addEventListener('click', (event) => {
-    NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
-    event.target.classList.add('nav-active');
+	if(event.target.tagName === "a"){
+		NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
+		event.target.classList.add('nav-active');
+	}	
 })
 
 document.addEventListener('scroll', onScroll);
 
 function onScroll(event){
 	const curPos = window.scrollY;
-
+	const links = NAVIGATION.querySelectorAll('a');
+	console.log(curPos);
 	if(curPos<600) {
-		NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
-        NAVIGATION.querySelectorAll('a')[0].classList.add('nav-active');
+		links.forEach(el => el.classList.remove('nav-active'));
+        links[0].classList.add('nav-active');
     }
 	if(curPos>=600&&curPos<1100) {
-		NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
-        NAVIGATION.querySelectorAll('a')[1].classList.add('nav-active');
+		links.forEach(el => el.classList.remove('nav-active'));
+        links[1].classList.add('nav-active');
 	}
 	if(curPos>=1100&&curPos<1966) {
-		NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
-        NAVIGATION.querySelectorAll('a')[2].classList.add('nav-active');
+		links.forEach(el => el.classList.remove('nav-active'));
+        links[2].classList.add('nav-active');
 	}
-	if(curPos>=1966&&curPos<2700) {
-		NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
-        NAVIGATION.querySelectorAll('a')[3].classList.add('nav-active');
+	if(curPos>=1966&&curPos<2550) {
+		links.forEach(el => el.classList.remove('nav-active'));
+        links[3].classList.add('nav-active');
 	}
-	if(curPos>=2700) {
-		NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
-        NAVIGATION.querySelectorAll('a')[4].classList.add('nav-active');
+	if(curPos>=2550) {
+		links.forEach(el => el.classList.remove('nav-active'));
+        links[4].classList.add('nav-active');
     }
 }
 //script for button in vertical phone
