@@ -183,3 +183,21 @@ BUTTON__CLOSE.addEventListener('click', ()=>{
 	document.getElementById('message-block').classList.add('post__message');
 
 });	
+
+
+//sript for hamburger
+const hamburger = document.getElementById('hamburger');
+const menu = document.getElementById('menu');
+hamburger.addEventListener('click', () => {
+	{
+		if (hamburger.classList[1] == 'is-active') {
+			hamburger.classList.remove('is-active');
+			menu.classList.remove('active-menu');
+		}
+		else{
+			hamburger.classList.add('is-active');
+			menu.classList.add('active-menu');
+		}
+		
+	}	
+})
