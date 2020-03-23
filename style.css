@@ -425,6 +425,13 @@ a:hover {
     height: auto;
   }
 }
+@media (max-width: 767px) {
+  .phones {
+    padding: 0px 0px 0px 20px;
+    height: 50%;
+    width: 100%;
+  }
+}
 
 .verticalPhone-off {
   background-color: black;
@@ -568,7 +575,7 @@ a:hover {
   .wrapper__services {
     height: 100%;
     border: none;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
   }
 }
 
@@ -732,7 +739,8 @@ svg {
 }
 @media (max-width: 767px) {
   .portfolio {
-    display: none;
+    max-height: 844px;
+    height: 100%;
   }
 }
 
@@ -742,6 +750,11 @@ svg {
   padding-top: 59px;
   padding-left: 40px;
   letter-spacing: normal;
+}
+@media (max-width: 767px) {
+  .h2__portfolio {
+    padding: 42px 30px 0px 30px;
+  }
 }
 
 .portfolio__p {
@@ -760,11 +773,17 @@ svg {
   .portfolio__p {
     max-height: 90px;
     font-weight: 300;
-    font-size: 18px;
     line-height: 30px;
     letter-spacing: 0.5px;
     padding-top: 20px;
     padding-right: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .portfolio__p {
+    padding: 17px 30px 10px 30px;
+    max-height: 110px;
+    line-height: 30px;
   }
 }
 
@@ -774,6 +793,11 @@ svg {
 @media (min-width: 768px) and (max-width: 1019px) {
   .ul__portfolio__container {
     padding: 3px 0px 0px 10px;
+  }
+}
+@media (max-width: 767px) {
+  .ul__portfolio__container {
+    padding: 5px 5px 0px 0px;
   }
 }
 .ul__portfolio__container ul {
@@ -801,6 +825,11 @@ svg {
   padding-left: 7px;
   padding-right: 7px;
   margin-right: -20px;
+}
+@media (max-width: 374px) {
+  .ul__portfolio__container ul li button {
+    font-size: 10px;
+  }
 }
 .ul__portfolio__container ul li .active__button {
   color: #dedede;
@@ -830,6 +859,13 @@ svg {
     margin: 27px 40px 0px 40px;
   }
 }
+@media (max-width: 767px) {
+  .grid__portfolio {
+    grid-template-areas: "a a" "a a" "a a" "a a";
+    margin: 25px 30px 42px 30px;
+    grid-gap: 11px 14px;
+  }
+}
 .grid__portfolio .grid__portfolio_image {
   max-width: 220px;
   max-height: 187px;
@@ -842,6 +878,12 @@ svg {
     max-height: 183.76px;
     height: 100%;
     width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .grid__portfolio .grid__portfolio_image {
+    max-width: 151px;
+    max-height: 128px;
   }
 }
 
@@ -857,6 +899,11 @@ svg {
   display: none;
 }
 
+@media (max-width: 767px) {
+  :nth-child(n+9) {
+    display: none;
+  }
+}
 .adoutUs {
   background-color: #f2f2f2;
   max-height: 734px;
@@ -873,7 +920,10 @@ svg {
 }
 @media (max-width: 767px) {
   .adoutUs {
-    display: none;
+    height: 100%;
+    border: none;
+    padding-bottom: 108px;
+    max-height: 1754px;
   }
 }
 
@@ -888,9 +938,20 @@ svg {
     padding-top: 52px;
   }
 }
+@media (max-width: 767px) {
+  .h2__aboutUs {
+    padding-top: 32px;
+    padding-left: 30px;
+  }
+}
 
 .p__aboutUs__container {
   padding: 18px 40px;
+}
+@media (max-width: 767px) {
+  .p__aboutUs__container {
+    padding: 20px 30px 0px 30px;
+  }
 }
 
 .p__aboutUs {
@@ -910,6 +971,12 @@ svg {
     letter-spacing: 0.14px;
   }
 }
+@media (max-width: 767px) {
+  .p__aboutUs {
+    max-height: 220px;
+    letter-spacing: 0.14px;
+  }
+}
 
 .grid__aboutUs {
   display: grid;
@@ -923,6 +990,13 @@ svg {
     grid-gap: 2%;
   }
 }
+@media (max-width: 767px) {
+  .grid__aboutUs {
+    grid-template-areas: "a" "a" "a";
+    padding: 6% 30px 0px 30px;
+    grid-gap: 2.5%;
+  }
+}
 .grid__aboutUs .grid__aboutUs_image {
   max-width: 300px;
   max-height: 300px;
@@ -933,6 +1007,12 @@ svg {
           max-width: 218.94px;
           max-height: 218.94px;
   }*/
+}
+@media (max-width: 767px) {
+  .grid__aboutUs .grid__aboutUs_image {
+    max-width: 314px;
+    max-height: 314px;
+  }
 }
 .grid__aboutUs .grid__aboutUs__text__container h3 {
   color: #666d89;
@@ -945,6 +1025,11 @@ svg {
 @media (min-width: 768px) and (max-width: 1019px) {
   .grid__aboutUs .grid__aboutUs__text__container h3 {
     margin: 8px 0px 0px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .grid__aboutUs .grid__aboutUs__text__container h3 {
+    margin: 13px 0px 0px 0px;
   }
 }
 .grid__aboutUs .grid__aboutUs__text__container p {
@@ -965,6 +1050,11 @@ svg {
     max-height: 65px;
   }
 }
+@media (max-width: 767px) {
+  .grid__aboutUs .grid__aboutUs__text__container p {
+    margin: 4px 0px 0px 0px;
+  }
+}
 .grid__aboutUs .grid__aboutUs__text__container .adam_p {
   letter-spacing: -0.07px;
   word-spacing: 0.02px;
@@ -976,6 +1066,11 @@ svg {
 @media (min-width: 768px) and (max-width: 1019px) {
   .social__container {
     margin: 10px 0px 0px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .social__container {
+    margin: 13px 0px 0px 0px;
   }
 }
 
