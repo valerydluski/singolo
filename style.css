@@ -1469,6 +1469,7 @@ form {
 footer {
   background-color: #2d303a;
 }
+
 .footer__content {
   height: 76px;
   display: flex;
@@ -1483,11 +1484,21 @@ footer {
   font-weight: 300;
   font-size: 12px;
 }
+@media (max-width: 767px) {
+  .footer__copy {
+    display: none;
+  }
+}
 
 .footer__ico {
   display: flex;
   margin-right: 33px;
   width: 162px;
+}
+@media (max-width: 767px) {
+  .footer__ico {
+    margin-left: 30%;
+  }
 }
 
 .footer__social_ico {
