@@ -12,27 +12,33 @@ NAVIGATION.addEventListener('click', (event) => {
 
 document.addEventListener('scroll', onScroll);
 
+  const headerHeight = 95
+
 function onScroll(event){
 	const curPos = window.scrollY;
 	const links = NAVIGATION.querySelectorAll('a');
-	console.log(curPos);
-	if(curPos<600) {
+	let servicesPosition = document.getElementById("services").offsetTop - headerHeight;
+	let portfolioPosition = document.getElementById("portfolio_link").offsetTop - headerHeight;
+	let aboutPosition = document.getElementById("about-us__link").offsetTop - headerHeight;
+	let contactPosition = document.getElementById("contact__link").offsetTop - headerHeight;
+	
+	if(curPos < servicesPosition) {
 		links.forEach(el => el.classList.remove('nav-active'));
         links[0].classList.add('nav-active');
     }
-	if(curPos>=600&&curPos<1100) {
+	if(curPos >= servicesPosition && curPos < portfolioPosition) {
 		links.forEach(el => el.classList.remove('nav-active'));
         links[1].classList.add('nav-active');
 	}
-	if(curPos>=1100&&curPos<1966) {
+	if(curPos >= portfolioPosition && curPos < aboutPosition) {
 		links.forEach(el => el.classList.remove('nav-active'));
         links[2].classList.add('nav-active');
 	}
-	if(curPos>=1966&&curPos<2550) {
+	if(curPos >= aboutPosition && curPos < contactPosition) {
 		links.forEach(el => el.classList.remove('nav-active'));
         links[3].classList.add('nav-active');
 	}
-	if(curPos>=2550) {
+	if(curPos >= contactPosition) {
 		links.forEach(el => el.classList.remove('nav-active'));
         links[4].classList.add('nav-active');
     }

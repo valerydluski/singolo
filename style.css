@@ -118,7 +118,8 @@ ul li {
 }
 
 a:hover {
-  color: #4adf05;
+  animation-name: bounce;
+  animation-duration: 1s;
 }
 
 .header__nav li:not(:first-child)::before {
@@ -201,25 +202,43 @@ a:hover {
   left: 0;
 }
 
+@keyframes bounce {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
 .wrapper__slider {
   height: 600px;
   background-color: #f06c64;
   border-bottom: 6px solid #ea676b;
+  transition-property: background-color;
+  transition-duration: 2s;
 }
 @media (min-width: 768px) and (max-width: 1019px) {
   .wrapper__slider {
-    height: 452px;
+    height: 100%;
   }
 }
 @media (max-width: 767px) {
   .wrapper__slider {
-    height: 220.59px;
+    height: 100%;
   }
 }
 
 .wrapper__slider.blue-slider {
   background-color: #648BF0;
   border-bottom: 6px solid blue;
+  transition-property: background-color;
+  transition-duration: 2s;
 }
 
 .slider {
@@ -230,14 +249,15 @@ a:hover {
 }
 @media (min-width: 768px) and (max-width: 1019px) {
   .slider {
-    height: 452px;
-    width: 768px;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 767px) {
   .slider {
-    height: 220.59px;
+    height: 100%;
     width: 100%;
     margin: 0 auto;
   }
@@ -248,9 +268,10 @@ a:hover {
 }
 @media (min-width: 768px) and (max-width: 1019px) {
   .vertical-phone {
-    width: 218px;
+    width: 26.7%;
     height: auto;
-    padding: 5px 0px 11px 37px;
+    margin: 6% 0% 0 5.5%;
+    padding: 0;
   }
 }
 @media (max-width: 767px) {
@@ -272,9 +293,10 @@ a:hover {
 }
 @media (min-width: 768px) and (max-width: 1019px) {
   .horizontal-phone {
-    height: 182px;
+    height: 44.4%;
     width: auto;
-    padding: 0px 36px 5px 0px;
+    margin: 6% 6% 0 0;
+    padding: 0;
   }
 }
 @media (max-width: 767px) {
@@ -411,7 +433,9 @@ a:hover {
 }
 @media (max-width: 1019px) {
   .horizontalPhone-off {
-    display: none;
+    margin: 1.6% 4% 0 47%;
+    height: 35.5%;
+    width: 37%;
   }
 }
 
@@ -427,9 +451,12 @@ a:hover {
 }
 @media (max-width: 767px) {
   .phones {
-    padding: 0px 0px 0px 20px;
-    height: 50%;
-    width: 100%;
+    padding: 0;
+    margin-right: 50%;
+    margin-left: 50%;
+    width: 30%;
+    min-width: 160px;
+    transform: translate(-50%, 0);
   }
 }
 
@@ -443,7 +470,10 @@ a:hover {
 }
 @media (max-width: 1019px) {
   .verticalPhone-off {
-    display: none;
+    padding: 0;
+    margin: 1.8% 0 0 7%;
+    height: 63%;
+    width: 21.2%;
   }
 }
 
@@ -454,12 +484,18 @@ a:hover {
   margin-top: 181px;
   margin-left: 154px;
   border: none;
-  background-color: #fff;
   text-decoration: none;
+  border: medium none;
+  background-image: none;
+  background: transparent;
+  background-color: transparent;
 }
 @media (max-width: 1019px) {
   .button__vertical-on {
-    display: none;
+    height: 5%;
+    width: 3%;
+    margin: 24% 0 0 16%;
+    padding: 0;
   }
 }
 
@@ -475,12 +511,17 @@ a:hover {
   margin-top: -19px;
   margin-left: 389px;
   border: none;
-  background-color: #fff;
   text-decoration: none;
+  border: medium none;
+  background-image: none;
+  background: transparent;
+  background-color: transparent;
 }
 @media (max-width: 1019px) {
   .button__horizontal-on {
-    display: none;
+    height: 5%;
+    width: 3.5%;
+    margin: 1.6% 0 0 42%;
   }
 }
 
@@ -504,12 +545,18 @@ a:hover {
   margin-top: 181px;
   margin-left: 154px;
   border: none;
-  background-color: #fff;
   text-decoration: none;
+  border: medium none;
+  background-image: none;
+  background: transparent;
+  background-color: transparent;
 }
 @media (max-width: 1019px) {
   .button__vertical-off {
-    display: none;
+    height: 5%;
+    width: 3%;
+    margin: 24% 0 0 16%;
+    padding: 0;
   }
 }
 
@@ -525,12 +572,13 @@ a:hover {
   margin-top: -19px;
   margin-left: 389px;
   border: none;
-  background-color: #fff;
   text-decoration: none;
 }
 @media (max-width: 1019px) {
   .button__horizontal-off {
-    display: none;
+    height: 5%;
+    width: 3.5%;
+    margin: 1.6% 0 0 42%;
   }
 }
 
@@ -733,13 +781,13 @@ svg {
 }
 @media (min-width: 768px) and (max-width: 1019px) {
   .portfolio {
-    max-height: 1102px;
+    padding-bottom: 63px;
     height: 100%;
   }
 }
 @media (max-width: 767px) {
   .portfolio {
-    max-height: 844px;
+    padding-bottom: 0;
     height: 100%;
   }
 }
@@ -847,11 +895,6 @@ svg {
   grid-template-areas: "a a a a" "a a a a" "a a a a";
   grid-gap: 17px 20px;
   margin: 18px 40px 0px 40px;
-  /*.grid__portfolio_image__container::before{
-      content: "";
-      float: left;
-      //padding-top: 100%;
-  }*/
 }
 @media (max-width: 1019px) {
   .grid__portfolio {
@@ -862,31 +905,24 @@ svg {
 @media (max-width: 767px) {
   .grid__portfolio {
     grid-template-areas: "a a" "a a" "a a" "a a";
-    margin: 25px 30px 42px 30px;
+    margin: 25px 30px 33px 30px;
     grid-gap: 11px 14px;
   }
 }
+.grid__portfolio .grid__portfolio_image__container {
+  animation-name: animation-image;
+  animation-duration: 2s;
+}
 .grid__portfolio .grid__portfolio_image {
-  max-width: 220px;
-  max-height: 187px;
   height: 100%;
   width: 100%;
 }
 @media (min-width: 768px) and (max-width: 1019px) {
   .grid__portfolio .grid__portfolio_image {
-    max-width: 216.19px;
-    max-height: 183.76px;
     height: 100%;
     width: 100%;
   }
 }
-@media (max-width: 767px) {
-  .grid__portfolio .grid__portfolio_image {
-    max-width: 151px;
-    max-height: 128px;
-  }
-}
-
 .grid__portfolio_image.active-img {
   border: #f06c64 solid 5px;
 }
@@ -904,6 +940,45 @@ svg {
     display: none;
   }
 }
+@keyframes animation-image {
+  from {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  40% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  50% {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  80% {
+    -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  to {
+    -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+.animated.flip {
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+  -webkit-animation-name: flip;
+  animation-name: flip;
+}
+
 .adoutUs {
   background-color: #f2f2f2;
   max-height: 734px;
