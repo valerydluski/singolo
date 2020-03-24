@@ -733,13 +733,13 @@ svg {
 }
 @media (min-width: 768px) and (max-width: 1019px) {
   .portfolio {
-    max-height: 1102px;
+    padding-bottom: 63px;
     height: 100%;
   }
 }
 @media (max-width: 767px) {
   .portfolio {
-    max-height: 844px;
+    padding-bottom: 0;
     height: 100%;
   }
 }
@@ -862,31 +862,20 @@ svg {
 @media (max-width: 767px) {
   .grid__portfolio {
     grid-template-areas: "a a" "a a" "a a" "a a";
-    margin: 25px 30px 42px 30px;
+    margin: 25px 30px 33px 30px;
     grid-gap: 11px 14px;
   }
 }
 .grid__portfolio .grid__portfolio_image {
-  max-width: 220px;
-  max-height: 187px;
   height: 100%;
   width: 100%;
 }
 @media (min-width: 768px) and (max-width: 1019px) {
   .grid__portfolio .grid__portfolio_image {
-    max-width: 216.19px;
-    max-height: 183.76px;
     height: 100%;
     width: 100%;
   }
 }
-@media (max-width: 767px) {
-  .grid__portfolio .grid__portfolio_image {
-    max-width: 151px;
-    max-height: 128px;
-  }
-}
-
 .grid__portfolio_image.active-img {
   border: #f06c64 solid 5px;
 }
