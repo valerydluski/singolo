@@ -225,12 +225,12 @@ a:hover {
 }
 @media (min-width: 768px) and (max-width: 1019px) {
   .wrapper__slider {
-    height: 452px;
+    height: 100%;
   }
 }
 @media (max-width: 767px) {
   .wrapper__slider {
-    height: 220.59px;
+    height: 100%;
   }
 }
 
@@ -249,14 +249,15 @@ a:hover {
 }
 @media (min-width: 768px) and (max-width: 1019px) {
   .slider {
-    height: 452px;
-    width: 768px;
+    height: 100%;
+    width: 100%;
     margin: 0 auto;
+    padding-bottom: 40px;
   }
 }
 @media (max-width: 767px) {
   .slider {
-    height: 220.59px;
+    height: 100%;
     width: 100%;
     margin: 0 auto;
   }
@@ -267,9 +268,10 @@ a:hover {
 }
 @media (min-width: 768px) and (max-width: 1019px) {
   .vertical-phone {
-    width: 218px;
+    width: 26.7%;
     height: auto;
-    padding: 5px 0px 11px 37px;
+    margin: 6% 0% 0 5.5%;
+    padding: 0;
   }
 }
 @media (max-width: 767px) {
@@ -291,9 +293,10 @@ a:hover {
 }
 @media (min-width: 768px) and (max-width: 1019px) {
   .horizontal-phone {
-    height: 182px;
+    height: 44.4%;
     width: auto;
-    padding: 0px 36px 5px 0px;
+    margin: 6% 6% 0 0;
+    padding: 0;
   }
 }
 @media (max-width: 767px) {
@@ -427,11 +430,12 @@ a:hover {
   margin-left: 424px;
   margin-top: -19px;
   position: absolute;
-  transition: 2s;
 }
 @media (max-width: 1019px) {
   .horizontalPhone-off {
-    display: none;
+    margin: 1.6% 4% 0 47%;
+    height: 35.5%;
+    width: 37%;
   }
 }
 
@@ -466,7 +470,10 @@ a:hover {
 }
 @media (max-width: 1019px) {
   .verticalPhone-off {
-    display: none;
+    padding: 0;
+    margin: 1.8% 0 0 7%;
+    height: 63%;
+    width: 21.2%;
   }
 }
 
@@ -477,12 +484,18 @@ a:hover {
   margin-top: 181px;
   margin-left: 154px;
   border: none;
-  background-color: #fff;
   text-decoration: none;
+  border: medium none;
+  background-image: none;
+  background: transparent;
+  background-color: transparent;
 }
 @media (max-width: 1019px) {
   .button__vertical-on {
-    display: none;
+    height: 5%;
+    width: 3%;
+    margin: 24% 0 0 16%;
+    padding: 0;
   }
 }
 
@@ -498,12 +511,17 @@ a:hover {
   margin-top: -19px;
   margin-left: 389px;
   border: none;
-  background-color: #fff;
   text-decoration: none;
+  border: medium none;
+  background-image: none;
+  background: transparent;
+  background-color: transparent;
 }
 @media (max-width: 1019px) {
   .button__horizontal-on {
-    display: none;
+    height: 5%;
+    width: 3.5%;
+    margin: 1.6% 0 0 42%;
   }
 }
 
@@ -527,12 +545,18 @@ a:hover {
   margin-top: 181px;
   margin-left: 154px;
   border: none;
-  background-color: #fff;
   text-decoration: none;
+  border: medium none;
+  background-image: none;
+  background: transparent;
+  background-color: transparent;
 }
 @media (max-width: 1019px) {
   .button__vertical-off {
-    display: none;
+    height: 5%;
+    width: 3%;
+    margin: 24% 0 0 16%;
+    padding: 0;
   }
 }
 
@@ -548,12 +572,13 @@ a:hover {
   margin-top: -19px;
   margin-left: 389px;
   border: none;
-  background-color: #fff;
   text-decoration: none;
 }
 @media (max-width: 1019px) {
   .button__horizontal-off {
-    display: none;
+    height: 5%;
+    width: 3.5%;
+    margin: 1.6% 0 0 42%;
   }
 }
 
