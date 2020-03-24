@@ -427,9 +427,12 @@ a:hover {
 }
 @media (max-width: 767px) {
   .phones {
-    padding: 0px 0px 0px 20px;
-    height: 50%;
-    width: 100%;
+    padding: 0;
+    margin-right: 50%;
+    margin-left: 50%;
+    width: 30%;
+    min-width: 160px;
+    transform: translate(-50%, 0);
   }
 }
 
