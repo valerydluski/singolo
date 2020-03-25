@@ -4,8 +4,9 @@ const NAVIGATION = document.getElementById('NAVIGATION');
 const links = NAVIGATION.querySelectorAll('a');
 
 NAVIGATION.addEventListener('click', (event) => {
-	if(event.target.tagName === "a"){
-		NAVIGATION.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
+	const navLinks = event.target;
+	if(navLinks.classList.contains('nav__link')){
+		navLinks.querySelectorAll('a').forEach(el => el.classList.remove('nav-active'));
 		event.target.classList.add('nav-active');
 	}	
 })
@@ -203,7 +204,47 @@ hamburger.addEventListener('click', () => {
 		else{
 			hamburger.classList.add('is-active');
 			menu.classList.add('active-menu');
-		}
-		
+		}	
 	}	
 })
+
+const hamburgerLinks = menu.querySelectorAll('a');
+menu.addEventListener('click', (event) => {
+	const hamburgerA = event.target;
+	if(hamburgerA.classList.contains('hamburger__link')){
+		hamburgerLinks.forEach(el => el.classList.remove('hamburger-active'));
+		event.target.classList.add('hamburger-active');
+	}		
+})
+
+document.addEventListener('scroll', hamburgerOnScroll);
+
+function hamburgerOnScroll(event){
+	const curPos = window.scrollY;
+	const hamburgerLinks = menu.querySelectorAll('a');
+	let hamburgerServicesPosition = document.getElementById("services-wrapper").offsetTop;
+	let hamburgerPortfolioPosition = document.getElementById("portfolio-wrapper").offsetTop;
+	let hamburgerAboutPosition = document.getElementById("about-us-wrapper").offsetTop;
+	let hamburgerContactPosition = document.getElementById("contact-wrapper").offsetTop;
+	
+	if(curPos < hamburgerServicesPosition) {
+		hamburgerLinks.forEach(el => el.classList.remove('hamburger-active'));
+        hamburgerLinks[0].classList.add('hamburger-active');
+    }
+	if(curPos >= hamburgerServicesPosition && curPos < hamburgerPortfolioPosition) {
+		hamburgerLinks.forEach(el => el.classList.remove('hamburger-active'));
+        hamburgerLinks[1].classList.add('hamburger-active');
+	}
+	if(curPos >= hamburgerPortfolioPosition && curPos < hamburgerAboutPosition) {
+		hamburgerLinks.forEach(el => el.classList.remove('hamburger-active'));
+        hamburgerLinks[2].classList.add('hamburger-active');
+	}
+	if(curPos >= hamburgerAboutPosition && curPos < hamburgerContactPosition) {
+		hamburgerLinks.forEach(el => el.classList.remove('hamburger-active'));
+        hamburgerLinks[3].classList.add('hamburger-active');
+	}
+	if(curPos >= hamburgerContactPosition) {
+		hamburgerLinks.forEach(el => el.classList.remove('hamburger-active'));
+        hamburgerLinks[4].classList.add('hamburger-active');
+    }
+}
