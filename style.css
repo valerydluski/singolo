@@ -170,18 +170,23 @@ a:hover {
 }
 
 .hamburger__ul {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  left: -100%;
-  width: 278px;
-  height: 100%;
-  margin: 0;
-  padding: 0px 0 0 71px;
-  list-style: none;
+  display: none;
   background-color: #2d303a;
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 767px) {
+  .hamburger__ul {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+    width: 278px;
+    height: 100%;
+    margin: 0;
+    padding: 0px 0 0 71px;
+    list-style: none;
+  }
 }
 .hamburger__ul .menu__h1 h1 {
   margin-left: -30px;
@@ -190,11 +195,21 @@ a:hover {
   letter-spacing: -0.5px;
   margin-bottom: 184px;
 }
-.hamburger__ul .nav__link {
+.hamburger__ul .hamburger__link {
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
   letter-spacing: -0.5px;
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+.hamburger__ul .hamburger-active {
+  color: #f06c64;
+}
+.hamburger__ul a:hover {
+  animation-name: bounce;
+  animation-duration: 1s;
 }
 
 .active-menu {
