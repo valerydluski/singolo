@@ -214,7 +214,10 @@ menu.addEventListener('click', (event) => {
 	if(hamburgerA.classList.contains('hamburger__link')){
 		hamburgerLinks.forEach(el => el.classList.remove('hamburger-active'));
 		event.target.classList.add('hamburger-active');
-	}		
+		hamburger.classList.remove('is-active');
+		menu.classList.remove('active-menu');
+	}	
+
 })
 
 document.addEventListener('scroll', hamburgerOnScroll);
