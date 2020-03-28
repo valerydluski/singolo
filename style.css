@@ -43,6 +43,11 @@ div {
   top: -95px;
   visibility: hidden;
 }
+@media (max-width: 767px) {
+  .anchor {
+    top: -48px;
+  }
+}
 
 header {
   position: sticky;
